@@ -7,7 +7,7 @@ VersionTestLevel=3
 m_strGcodeExtension=nc
 m_iGcodeFilter=0
 m_iRecentProgramCntMax=20
-m_strFavoritePath=C:\\MaestroLite Data\\Z PROGRAMS
+m_strFavoritePath=R:\\Manufacturing\\Robotic Solder\\Odyssey Programs
 m_bFavoriteSubfolders=1
 m_strListGcodeFilterExt=nc;cnc;ncc;fan;tap;txt
 [uicopy]
