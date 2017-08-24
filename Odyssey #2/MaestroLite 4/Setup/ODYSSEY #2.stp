@@ -4914,7 +4914,7 @@ m_abShowDro.0=1
 m_abShowDro.1=1
 m_abShowDro.2=0
 m_abShowDro.3=0
-m_bShowToolBox=1
+m_bShowToolBox=0
 m_bShowTeachBox=0
 m_bShowFiducialBox=0
 m_abShowControlPanel.0=1
@@ -5195,10 +5195,10 @@ m_bIsEditable=1
 m_bDisplay=1
 m_bIsEditable=1
 [uservarusage3]
-m_bDisplay=0
+m_bDisplay=1
 m_bIsEditable=1
 [uservarusage4]
-m_bDisplay=0
+m_bDisplay=1
 m_bIsEditable=1
 [uservarusage5]
 m_bDisplay=0

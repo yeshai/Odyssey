@@ -10,7 +10,6 @@ REAL #ANGHYP
 REAL #VERTCHANGE
 REAL #PALLETWIDTH
 (***********************************************************)
-(STRING #FLUX_USED
 REAL #FLUX_HEIGHT
 REAL #FLUX_TIME
 REAL #FLUX_DRIP_TIME
@@ -24,11 +23,10 @@ REAL #PREHEAT_HEIGHT
 REAL #PREHEAT_TIME
 (***********************************************************)
 REAL #SOLDER_HEIGHT_
-REAL #SPEED_ACROSS_WAVE_
-REAL #ANGLE_OVER_WAVE_
+REAL #ANGLE_OVER_WAVE
 REAL #SOLDER_HEIGHT_F
 REAL #SPEED_ACROSS_WAVE_F
-REAL #ANGLE_OVER_WAVE_F
+REAL #ANGLE_OVER_WAVEF
 REAL #SOLDER_POSITION_
 (***********************************************************)
 STRING #WASH_TYPE
@@ -67,8 +65,7 @@ REAL #DRY_TIME
 
 (***********************************************************)
 #PALLETWIDTH= 145
-#SOLDER_HEIGHT_= -120
-#SPEED_ACROSS_WAVE_= 600
+#SOLDER_HEIGHT_= -120 + #PART_THICKNESS
 #ANGLE_OVER_WAVE_= 0
 #SOLDER_POSITION_= 1209
 (***********************************************************)
