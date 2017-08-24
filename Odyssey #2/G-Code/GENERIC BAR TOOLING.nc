@@ -67,7 +67,7 @@ REAL #DRY_DWELL
 
 (***********************************************************)
 #PALLETWIDTH= 145
-#SOLDER_HEIGHT_PB= -63.5
+#SOLDER_HEIGHT_PB= -120
 #SPEED_ACROSS_WAVE_PB= 600
 #ANGLE_OVER_WAVE_PB= 0
 #SOLDER_POSITION_PB= 1209
