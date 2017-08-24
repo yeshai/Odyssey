@@ -40,7 +40,7 @@ m_bEnableSignalDisconnect=1
 m_bEnableSignalOnError=1
 m_iMcodeNumberIdleInterlock=-9999
 m_dIdleDebounceSec=0.250000000000
-m_bUseAdvancedViewports=0
+m_bUseAdvancedViewports=1
 m_bUseAdvancedMachineParams=0
 m_bExpressMode=1
 m_iMachineSubType=7
@@ -1955,7 +1955,7 @@ m_posPoint.5=0.000000000000
 [refpoint2]
 m_strDescription=FIXTURE ZERO
 m_bIsMach=1
-m_posPoint.0=152.908000000000
+m_posPoint.0=0.000000000000
 m_posPoint.1=22.428000000000
 m_posPoint.2=0.000000000000
 m_posPoint.3=0.000000000000
@@ -4908,7 +4908,7 @@ m_iRestoreMachineStateMode=0
 m_iAxisMovedAfterZero=-1
 m_dDistanceMovedAfterZero=0.000000000000
 m_bUseDisplayLists=1
-m_bFineGridSpacing=0
+m_bFineGridSpacing=1
 m_bDrawTrace=1
 m_abShowDro.0=1
 m_abShowDro.1=1
@@ -5057,7 +5057,7 @@ m_iToolIcon=0
 m_iTraceWidth=0
 [viewport2]
 m_bOn=1
-m_iScaleMode=0
+m_iScaleMode=1
 m_iToolIcon=0
 m_iTraceWidth=0
 [viewport3]

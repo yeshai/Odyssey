@@ -41,6 +41,11 @@ G01 A0 F1080
 M17 M35           (TURN OFF PUMP1 AND NITROGEN1)
 M99
 (***********************************************************)
+OPUMPSTART
+G210 P1
+M16 M34 S#PUMP1RPM       		(Pump ON, N2 ON)
+M99
+(***********************************************************)
 OPARTWASH
 G01 X377 Z-5 F20000
 G01 Z#WASH_HEIGHT F#WASH_SPEED_IN             (WASH PART)
