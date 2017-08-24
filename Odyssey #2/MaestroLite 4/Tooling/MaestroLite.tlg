@@ -4,11 +4,11 @@ VersionMinor=0
 VersionRevision=31
 VersionTestLevel=100
 [tool0]
-m_strDescription=
+m_strDescription=SOIC
 m_dDiameter=0.000000000000
 m_offGeom.0=0.000000000000
 m_offGeom.1=0.000000000000
-m_offGeom.2=0.000000000000
+m_offGeom.2=3.000000000000
 m_offGeom.3=0.000000000000
 m_offGeom.4=0.000000000000
 m_offGeom.5=0.000000000000
@@ -22,11 +22,11 @@ m_iCounter=0
 m_iCounterLimit=0
 m_iCounterExtension=0
 [tool1]
-m_strDescription=
+m_strDescription=ZIP
 m_dDiameter=0.000000000000
 m_offGeom.0=0.000000000000
 m_offGeom.1=0.000000000000
-m_offGeom.2=0.000000000000
+m_offGeom.2=10.000000000000
 m_offGeom.3=0.000000000000
 m_offGeom.4=0.000000000000
 m_offGeom.5=0.000000000000

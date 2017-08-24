@@ -916,13 +916,13 @@ m_bDisplayInAuxBox=1
 m_strDescription=DSP #1 Pump
 m_strButtonText=
 m_iWarning=3
-m_bDisplayInOutputBox=0
+m_bDisplayInOutputBox=1
 m_bDisplayInAuxBox=1
 [output4]
-m_strDescription=DSP #2 Pump
+m_strDescription=
 m_strButtonText=
 m_iWarning=3
-m_bDisplayInOutputBox=1
+m_bDisplayInOutputBox=0
 m_bDisplayInAuxBox=1
 [output5]
 m_strDescription=Air Knife
@@ -4914,7 +4914,7 @@ m_abShowDro.0=1
 m_abShowDro.1=1
 m_abShowDro.2=0
 m_abShowDro.3=0
-m_bShowToolBox=0
+m_bShowToolBox=1
 m_bShowTeachBox=0
 m_bShowFiducialBox=0
 m_abShowControlPanel.0=1
@@ -5189,10 +5189,10 @@ m_iFunction=0
 m_bDisplay=0
 m_bIsEditable=1
 [uservarusage1]
-m_bDisplay=0
+m_bDisplay=1
 m_bIsEditable=1
 [uservarusage2]
-m_bDisplay=0
+m_bDisplay=1
 m_bIsEditable=1
 [uservarusage3]
 m_bDisplay=0
