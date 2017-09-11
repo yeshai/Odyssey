@@ -1,0 +1,222 @@
+======> Tracker report (08/19/17 23:41:00)
+----------------------------------------------
+Line history
+--------------------------------
+Thread: 0x00001B54 [19-23:40:50.264](13) .\401A.cpp: 3077
+                   [19-23:40:50.264](14) .\401A.cpp: 3125
+                   [19-23:40:50.264](15) .\401A.cpp: 3144
+                   [19-23:40:50.264](16) .\401A.cpp: 3191
+                   [19-23:40:50.282](17) .\401A.cpp: 3253
+                   [19-23:40:54.724](29) .\Controller.cpp: 1409
+
+Thread: 0x00003B64 [19-23:40:59.799](30) .\GeometryThread.cpp: 244
+                   [19-23:40:59.799](31) .\GeometryThread.cpp: 244
+                   [19-23:40:59.799](32) .\GeometryThread.cpp: 272
+                   [19-23:40:59.799](33) .\GeometryThread.cpp: 1214
+                   [19-23:40:59.799](37) .\Controller.cpp: 8711
+                   [19-23:40:59.799](41) .\Controller.cpp: 8726
+                   [19-23:40:59.799](42) .\Controller.cpp: 8726
+                   [19-23:40:59.799](43) .\Controller.cpp: 8784
+                   [19-23:40:59.799](44) .\401A.cpp: 26053
+                   [19-23:40:59.799](45) .\Controller.cpp: 8796
+                   [19-23:40:59.799](47) .\Controller.cpp: 10262
+
+Thread: 0x0000309C [19-23:40:59.799](31) .\Controller.cpp: 10409
+                   [19-23:40:59.799](35) .\Controller.cpp: 13442
+                   [19-23:40:59.799](36) .\Controller.cpp: 13442
+                   [19-23:40:59.799](39) .\Controller.cpp: 10411
+
+Thread: 0x00002918 [19-23:40:59.799](48) .\Timing.cpp: 122
+                   [19-23:40:59.799](49) .\Timing.cpp: 124
+                   [19-23:40:59.799](50) .\Timing.cpp: 2648
+                   [19-23:40:59.799](51) .\Timing.cpp: 2562
+                   [19-23:40:59.799](52) .\Timing.cpp: 2571
+                   [19-23:40:59.799](53) .\Timing.cpp: 2571
+                   [19-23:40:59.799](54) .\Timing.cpp: 2574
+                   [19-23:40:59.799](55) .\Timing.cpp: 2574
+                   [19-23:40:59.799](57) .\Timing.cpp: 374
+
+
+Function calls
+----------------------------------
+
+Messages
+--------------------------------
+Channel: GUI
+--------------------------------
+[19-23:40:54.327](24) Point Name
+[19-23:40:54.423](26) Select Control Panel G-Code
+[19-23:40:54.630](28) Select Control Panel G-Code
+[19-23:41:00.553](60) Program exited normally
+
+Channel: General
+--------------------------------
+[19-23:40:38.920](0) Found CurrentVersion
+[19-23:40:38.920](1) Found Uninstall
+[19-23:40:38.920](2) Looking for GUID {51D10F57-4A90-469E-B2AC-73B098BD117A}
+[19-23:40:38.920](3) Found CurrentVersion
+[19-23:40:38.920](4) Found Uninstall
+[19-23:40:38.920](5) Looking for GUID {9CA7FFB5-CD91-41B8-B75F-9294EF40F4E4}
+[19-23:40:47.117](6) Software version 4.5.24
+[19-23:40:49.941](7) Setup File: C:\MaestroLite Data\MaestroLite 4\Setup\MaestroLite.stp
+[19-23:40:49.941](8) Tooling File: C:\MaestroLite Data\MaestroLite 4\Tooling\MaestroLite.tlg
+
+Channel: Controller Activity
+--------------------------------
+[19-23:40:50.058](11) Configuring the controller
+[19-23:40:50.264](12)   Configuring subclass
+[19-23:40:50.282](18)   Setting up idle timer
+[19-23:40:50.282](19)   Setting up updater
+[19-23:40:50.282](20)   Configuring camera?
+[19-23:40:50.282](21) Configuration complete
+
+Channel: Controller Error
+--------------------------------
+[19-23:40:59.799](56) Action not ready count = 0
+
+Channel: Controller Mode
+--------------------------------
+[19-23:40:59.799](46) SetMode() to 0
+
+Channel: Controller State
+--------------------------------
+[19-23:40:59.799](38) Modbus channel closed
+[19-23:40:59.799](40) Unload program
+
+Channel: 401A Time
+--------------------------------
+[19-23:41:00.184](59) 0.0000000
+
+Channel: Controller Time
+--------------------------------
+[19-23:41:00.184](58) 0.0000000
+
+Channel: Camera
+--------------------------------
+[19-23:41:00.553](61) Shutting down camera
+[19-23:41:00.553](62) Stopping graph
+[19-23:41:00.553](63) Graph stopped
+[19-23:41:00.553](64) Disconnecting graph
+[19-23:41:00.553](65) Graph disconnected
+
+Channel: Cfg Change
+--------------------------------
+[19-23:40:50.058](9) Begin handling cfg changes
+[19-23:40:50.058](10) Prepare to call api configure
+[19-23:40:50.282](22) Api configure completed
+[19-23:40:50.282](23) Cfg menu rebuilt
+[19-23:40:54.358](25) Boxes configured
+[19-23:40:54.438](27) Done handling cfg changes
+
+
+======> Tracker report (08/19/17 23:41:00)
+----------------------------------------------
+Line history
+--------------------------------
+Thread: 0x00001B54 [19-23:40:50.264](13) .\401A.cpp: 3077
+                   [19-23:40:50.264](14) .\401A.cpp: 3125
+                   [19-23:40:50.264](15) .\401A.cpp: 3144
+                   [19-23:40:50.264](16) .\401A.cpp: 3191
+                   [19-23:40:50.282](17) .\401A.cpp: 3253
+                   [19-23:40:54.724](29) .\Controller.cpp: 1409
+
+Thread: 0x00003B64 [19-23:40:59.799](30) .\GeometryThread.cpp: 244
+                   [19-23:40:59.799](31) .\GeometryThread.cpp: 244
+                   [19-23:40:59.799](32) .\GeometryThread.cpp: 272
+                   [19-23:40:59.799](33) .\GeometryThread.cpp: 1214
+                   [19-23:40:59.799](37) .\Controller.cpp: 8711
+                   [19-23:40:59.799](41) .\Controller.cpp: 8726
+                   [19-23:40:59.799](42) .\Controller.cpp: 8726
+                   [19-23:40:59.799](43) .\Controller.cpp: 8784
+                   [19-23:40:59.799](44) .\401A.cpp: 26053
+                   [19-23:40:59.799](45) .\Controller.cpp: 8796
+                   [19-23:40:59.799](47) .\Controller.cpp: 10262
+
+Thread: 0x0000309C [19-23:40:59.799](31) .\Controller.cpp: 10409
+                   [19-23:40:59.799](35) .\Controller.cpp: 13442
+                   [19-23:40:59.799](36) .\Controller.cpp: 13442
+                   [19-23:40:59.799](39) .\Controller.cpp: 10411
+
+Thread: 0x00002918 [19-23:40:59.799](48) .\Timing.cpp: 122
+                   [19-23:40:59.799](49) .\Timing.cpp: 124
+                   [19-23:40:59.799](50) .\Timing.cpp: 2648
+                   [19-23:40:59.799](51) .\Timing.cpp: 2562
+                   [19-23:40:59.799](52) .\Timing.cpp: 2571
+                   [19-23:40:59.799](53) .\Timing.cpp: 2571
+                   [19-23:40:59.799](54) .\Timing.cpp: 2574
+                   [19-23:40:59.799](55) .\Timing.cpp: 2574
+                   [19-23:40:59.799](57) .\Timing.cpp: 374
+
+
+Function calls
+----------------------------------
+
+Messages
+--------------------------------
+Channel: GUI
+--------------------------------
+[19-23:40:54.327](24) Point Name
+[19-23:40:54.423](26) Select Control Panel G-Code
+[19-23:40:54.630](28) Select Control Panel G-Code
+[19-23:41:00.553](60) Program exited normally
+
+Channel: General
+--------------------------------
+[19-23:40:38.920](0) Found CurrentVersion
+[19-23:40:38.920](1) Found Uninstall
+[19-23:40:38.920](2) Looking for GUID {51D10F57-4A90-469E-B2AC-73B098BD117A}
+[19-23:40:38.920](3) Found CurrentVersion
+[19-23:40:38.920](4) Found Uninstall
+[19-23:40:38.920](5) Looking for GUID {9CA7FFB5-CD91-41B8-B75F-9294EF40F4E4}
+[19-23:40:47.117](6) Software version 4.5.24
+[19-23:40:49.941](7) Setup File: C:\MaestroLite Data\MaestroLite 4\Setup\MaestroLite.stp
+[19-23:40:49.941](8) Tooling File: C:\MaestroLite Data\MaestroLite 4\Tooling\MaestroLite.tlg
+
+Channel: Controller Activity
+--------------------------------
+[19-23:40:50.058](11) Configuring the controller
+[19-23:40:50.264](12)   Configuring subclass
+[19-23:40:50.282](18)   Setting up idle timer
+[19-23:40:50.282](19)   Setting up updater
+[19-23:40:50.282](20)   Configuring camera?
+[19-23:40:50.282](21) Configuration complete
+
+Channel: Controller Error
+--------------------------------
+[19-23:40:59.799](56) Action not ready count = 0
+
+Channel: Controller Mode
+--------------------------------
+[19-23:40:59.799](46) SetMode() to 0
+
+Channel: Controller State
+--------------------------------
+[19-23:40:59.799](38) Modbus channel closed
+[19-23:40:59.799](40) Unload program
+
+Channel: 401A Time
+--------------------------------
+[19-23:41:00.184](59) 0.0000000
+
+Channel: Controller Time
+--------------------------------
+[19-23:41:00.184](58) 0.0000000
+
+Channel: Camera
+--------------------------------
+[19-23:41:00.553](61) Shutting down camera
+[19-23:41:00.553](62) Stopping graph
+[19-23:41:00.553](63) Graph stopped
+[19-23:41:00.553](64) Disconnecting graph
+[19-23:41:00.553](65) Graph disconnected
+
+Channel: Cfg Change
+--------------------------------
+[19-23:40:50.058](9) Begin handling cfg changes
+[19-23:40:50.058](10) Prepare to call api configure
+[19-23:40:50.282](22) Api configure completed
+[19-23:40:50.282](23) Cfg menu rebuilt
+[19-23:40:54.358](25) Boxes configured
+[19-23:40:54.438](27) Done handling cfg changes
+
+
