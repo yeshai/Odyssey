@@ -5,7 +5,7 @@ VersionRevision=0
 VersionTestLevel=13
 [uservar0]
 m_strName=#PUMP1RPM
-m_strDescription=DSP#1
+m_strDescription=SOLDER PUMP [RPM]
 m_iType=2
 [uservar1]
 m_strName=#FLUX_USED
@@ -13,7 +13,7 @@ m_strDescription=USE FLUX?
 m_iType=1
 [uservar2]
 m_strName=#PREHEAT_USED
-m_strDescription=USE PREHEAT?
+m_strDescription=USE IR PREHEAT?
 m_iType=1
 [uservar3]
 m_strName=#PART_THICKNESS
@@ -84,10 +84,10 @@ m_strName=
 m_strDescription=
 m_iType=2
 [uservarrecord0]
-m_aflexValue.0=2;650
+m_aflexValue.0=2;600
 m_aflexValue.1=1;0
 m_aflexValue.2=1;0
-m_aflexValue.3=3;1.500000000000
+m_aflexValue.3=3;2.500000000000
 m_aflexValue.4=2;200
 m_aflexValue.5=2;60
 m_aflexValue.6=0;

@@ -5186,7 +5186,7 @@ m_iFunction=0
 [uipendbtn39]
 m_iFunction=0
 [uservarusage0]
-m_bDisplay=0
+m_bDisplay=1
 m_bIsEditable=1
 [uservarusage1]
 m_bDisplay=1
@@ -5306,7 +5306,7 @@ m_bIsEditable=1
 m_bDisplay=0
 m_bIsEditable=1
 [uidac0]
-m_bShowControls=1
+m_bShowControls=0
 m_strDescription=Pump 1 RPM
 m_strlstPreset=700;650;649;648;647;646;645;644;643;642;641;640;639;638;637;636;635;634;633;632;631;630;600;500;400;300;200;100;0
 [uidac1]
