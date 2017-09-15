@@ -20,7 +20,7 @@ REAL #FLUX_DIP_DEPTH
 (***********************************************************)
 (STRING #PREHEAT_USED
 REAL #PREHEAT_HEIGHT
-REAL #PREHEAT_TIME
+(REAL #PREHEAT_TIME)
 (***********************************************************)
 REAL #SOLDER_HEIGHT
 REAL #ANGLE_OVER_WAVE
