@@ -1,4 +1,4 @@
-#R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
+#C:\Users\Odyssey.User\Desktop\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
 M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
 (Initialization Complete)
 G52 X0 Y0 Z0  (Calibration Offsets)
@@ -18,9 +18,7 @@ REAL #FLUX_DIP_SPEED_IN
 REAL #FLUX_DIP_SPEED_OUT
 REAL #FLUX_DIP_DEPTH
 (***********************************************************)
-(STRING #PREHEAT_USED
 REAL #PREHEAT_HEIGHT
-(REAL #PREHEAT_TIME)
 (***********************************************************)
 REAL #SOLDER_HEIGHT
 REAL #ANGLE_OVER_WAVE
@@ -46,7 +44,6 @@ REAL #DRY_TIME
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************)
 
 (***********************************************************)
-(#FLUX_USED= "NO" 	       (ENTER "YES" OR "NO")
 #FLUX_HEIGHT= -97.0		 (SET THE BOTTOM OF THE LEAD TO JUST TOUCH THE SURFACE OF THE FLUX
 #FLUX_TIME= 0.5            (TIME IN FLUX)
 #FLUX_DRIP_TIME= 3     (TIME TO DRIP OFF FLUX)
@@ -56,13 +53,11 @@ REAL #DRY_TIME
 #FLUX_DIP_DEPTH= 1        (HOW DEEP TO GO INTO THE FLUX)
 
 (***********************************************************)
-(#PREHEAT_USED= "NO" 	        (ENTER "YES" OR "NO"
-#PREHEAT_HEIGHT= -60
-#PREHEAT_TIME= 30
+#PREHEAT_HEIGHT= -65 + #PART_THICKNESS
 
 (***********************************************************)
 #PALLETWIDTH= 145 (PALLET WIDTH IS NEGATIVE TO ACCOUNT FOR TRAVEL DIRECTION)
-#SOLDER_HEIGHT= -120 + #PART_THICKNESS
+#SOLDER_HEIGHT= -63 + #PART_THICKNESS
 #ANGLE_OVER_WAVE= 0
 #SOLDER_POSITION= 1209
 (***********************************************************)
