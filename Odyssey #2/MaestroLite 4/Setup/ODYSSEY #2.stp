@@ -955,37 +955,37 @@ m_iWarning=3
 m_bDisplayInOutputBox=1
 m_bDisplayInAuxBox=1
 [output10]
-m_strDescription=Flux Pump #1
+m_strDescription=Vacuum Blow Off Valve
 m_strButtonText=
 m_iWarning=3
 m_bDisplayInOutputBox=1
 m_bDisplayInAuxBox=1
 [output11]
-m_strDescription=Flux Pump #2
-m_strButtonText=
-m_iWarning=3
-m_bDisplayInOutputBox=1
-m_bDisplayInAuxBox=1
-[output12]
 m_strDescription=Nitrogen Solenoid #1
 m_strButtonText=
 m_iWarning=3
 m_bDisplayInOutputBox=1
 m_bDisplayInAuxBox=1
-[output13]
-m_strDescription=Nitrogen Solendoid #2
+[output12]
+m_strDescription=
 m_strButtonText=
 m_iWarning=3
-m_bDisplayInOutputBox=1
-m_bDisplayInAuxBox=1
+m_bDisplayInOutputBox=0
+m_bDisplayInAuxBox=0
+[output13]
+m_strDescription=
+m_strButtonText=
+m_iWarning=3
+m_bDisplayInOutputBox=0
+m_bDisplayInAuxBox=0
 [output14]
-m_strDescription=Rinse Solenoid
+m_strDescription=Flux Pump #1
 m_strButtonText=
 m_iWarning=3
 m_bDisplayInOutputBox=1
 m_bDisplayInAuxBox=1
 [output15]
-m_strDescription=Vacuum Blow Off Valve
+m_strDescription=Rinse Solenoid
 m_strButtonText=
 m_iWarning=3
 m_bDisplayInOutputBox=1
@@ -1123,7 +1123,7 @@ m_strDescription=SINGLE AXIS TOOL
 m_offGeom.0=0.000000000000
 m_offGeom.1=0.000000000000
 m_offGeom.2=0.000000000000
-m_offGeom.3=44.391000000000
+m_offGeom.3=45.442000000000
 m_offGeom.4=0.000000000000
 m_offGeom.5=0.000000000000
 [fixture5]
@@ -2468,7 +2468,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput8]
 m_iNumber=18
-m_strDescription=SOLDER PUMP2 ON
+m_strDescription=
 m_dDelaySec=0.000000000000
 m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
@@ -2512,7 +2512,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput9]
 m_iNumber=19
-m_strDescription=SOLDER PUMP2 OFF
+m_strDescription=
 m_dDelaySec=0.000000000000
 m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
@@ -3086,7 +3086,7 @@ m_bDisplayInOutputBox=0
 m_iNumber=34
 m_strDescription=NITROGEN1 ON
 m_dDelaySec=0.000000000000
-m_bBeforeMove=0
+m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
 m_bactOutput.0=2
 m_bactOutput.1=2
@@ -3130,7 +3130,7 @@ m_bDisplayInOutputBox=0
 m_iNumber=35
 m_strDescription=NITROGEN1 OFF
 m_dDelaySec=0.000000000000
-m_bBeforeMove=0
+m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
 m_bactOutput.0=2
 m_bactOutput.1=2
@@ -3218,7 +3218,7 @@ m_bDisplayInOutputBox=0
 m_iNumber=37
 m_strDescription=FLUXPUMP1 ON
 m_dDelaySec=0.000000000000
-m_bBeforeMove=0
+m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
 m_bactOutput.0=2
 m_bactOutput.1=2
@@ -3262,7 +3262,7 @@ m_bDisplayInOutputBox=0
 m_iNumber=38
 m_strDescription=FLUXPUMP1 OFF
 m_dDelaySec=0.000000000000
-m_bBeforeMove=0
+m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
 m_bactOutput.0=2
 m_bactOutput.1=2
@@ -3304,9 +3304,9 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput27]
 m_iNumber=39
-m_strDescription=FLUXPUMP2 ON
+m_strDescription=
 m_dDelaySec=0.000000000000
-m_bBeforeMove=0
+m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
 m_bactOutput.0=2
 m_bactOutput.1=2
@@ -3348,9 +3348,9 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput28]
 m_iNumber=40
-m_strDescription=FLUXPUMP2 OFF
+m_strDescription=
 m_dDelaySec=0.000000000000
-m_bBeforeMove=0
+m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
 m_bactOutput.0=2
 m_bactOutput.1=2
@@ -3392,7 +3392,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput29]
 m_iNumber=41
-m_strDescription=NITROGEN2 ON
+m_strDescription=
 m_dDelaySec=0.000000000000
 m_bBeforeMove=0
 m_bDelayBeforeSetLines=0
@@ -3436,7 +3436,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput30]
 m_iNumber=42
-m_strDescription=NITROGEN2 OFF
+m_strDescription=
 m_dDelaySec=0.000000000000
 m_bBeforeMove=0
 m_bDelayBeforeSetLines=0
@@ -4811,7 +4811,7 @@ m_iSubAxis=-1
 m_iPolarity=1
 [dac0]
 m_dVoltageMin=0.000000000000
-m_dVoltageMax=10.000000000000
+m_dVoltageMax=5.000000000000
 [dac1]
 m_dVoltageMin=0.000000000000
 m_dVoltageMax=10.000000000000
@@ -4892,7 +4892,7 @@ m_dLockoutHysteresisPct=5.000000000000
 m_bUse=0
 m_iSpindleCnt=1
 m_dLoadPctLimit=75.000000000000
-m_iComPort=1
+m_iComPort=3
 m_iFirstDriveAddress=0
 [uimain]
 m_bHomeDialogManual=0
@@ -5306,10 +5306,10 @@ m_bIsEditable=1
 m_bDisplay=0
 m_bIsEditable=1
 [uidac0]
-m_bShowControls=0
+m_bShowControls=1
 m_strDescription=Pump 1 RPM
-m_strlstPreset=700;650;649;648;647;646;645;644;643;642;641;640;639;638;637;636;635;634;633;632;631;630;600;500;400;300;200;100;0
+m_strlstPreset=1300;1200;1100;1000;900;800;700;600;500;400;300;200;100;0
 [uidac1]
 m_bShowControls=0
 m_strDescription=Pump 2 RPM
-m_strlstPreset=700
+m_strlstPreset=1300;1200;1100;1000;900;800;700;600;500;400;300;200;100;0
