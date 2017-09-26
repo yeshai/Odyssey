@@ -46,6 +46,7 @@ M99
 OPUMPSTART
 G210 P1
 M16 M34 S#PUMP1RPM       		(Pump ON, N2 ON)
+(M16 M34 S100      		(Pump ON, N2 ON)
 M99
 (***********************************************************)
 OPARTWASH

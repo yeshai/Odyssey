@@ -4,28 +4,28 @@ VersionMinor=0
 VersionRevision=0
 VersionTestLevel=13
 [uservar0]
-m_strName=#PUMP1RPM
-m_strDescription=SOLDER PUMP [RPM]
-m_iType=2
+m_strName=#PART_THICKNESS
+m_strDescription=PART THICKNESS [mm]
+m_iType=3
 [uservar1]
 m_strName=#FLUX_USED
-m_strDescription=USE FLUX?
+m_strDescription=USE AUTOFLUX?
 m_iType=1
 [uservar2]
 m_strName=#PREHEAT_USED
 m_strDescription=USE IR PREHEAT?
 m_iType=1
 [uservar3]
-m_strName=#PART_THICKNESS
-m_strDescription=PART THICKNESS [mm]
-m_iType=3
+m_strName=#PREHEAT_TIME
+m_strDescription=PREHEAT TIME [s]
+m_iType=2
 [uservar4]
 m_strName=#SPEED_ACROSS_WAVE
-m_strDescription=SOLDER SPEED
+m_strDescription=SOLDER SPEED [mm/s]
 m_iType=2
 [uservar5]
-m_strName=#PREHEAT_TIME
-m_strDescription=PREHEAT TIME
+m_strName=#PUMP1RPM
+m_strDescription=SOLDER PUMP [RPM]
 m_iType=2
 [uservar6]
 m_strName=
@@ -34,7 +34,7 @@ m_iType=2
 [uservar7]
 m_strName=
 m_strDescription=
-m_iType=2
+m_iType=3
 [uservar8]
 m_strName=
 m_strDescription=
@@ -84,12 +84,12 @@ m_strName=
 m_strDescription=
 m_iType=2
 [uservarrecord0]
-m_aflexValue.0=2;100
+m_aflexValue.0=3;1.000000000000
 m_aflexValue.1=1;0
 m_aflexValue.2=1;0
-m_aflexValue.3=3;1.000000000000
+m_aflexValue.3=2;60
 m_aflexValue.4=2;600
-m_aflexValue.5=2;60
+m_aflexValue.5=2;575
 m_aflexValue.6=0;
 m_aflexValue.7=0;
 m_aflexValue.8=0;
