@@ -1,4 +1,4 @@
-#C:\Users\Odyssey.User\Desktop\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
+#R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
 M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
 (Initialization Complete)
 G52 X0 Y0 Z0  (Calibration Offsets)
@@ -22,7 +22,7 @@ REAL #PREHEAT_HEIGHT
 (***********************************************************)
 REAL #SOLDER_HEIGHT
 REAL #ANGLE_OVER_WAVE
-REAL #SOLDER_POSITION
+(REAL #SOLDER_POSITION
 (***********************************************************)
 STRING #WASH_TYPE
 STRING #WASH_USED
@@ -59,7 +59,7 @@ REAL #DRY_TIME
 #PALLETWIDTH= 145 (PALLET WIDTH IS NEGATIVE TO ACCOUNT FOR TRAVEL DIRECTION)
 #SOLDER_HEIGHT= -68 + #PART_THICKNESS (@PUMP = 550 RPM)
 #ANGLE_OVER_WAVE= 0
-#SOLDER_POSITION= 1209
+(#SOLDER_POSITION= 1209 (CHANGED TO REFERENCE PT.) )
 (***********************************************************)
 #WASH_USED= "NO"                (ENTER "YES" OR "NO")
 #WASH_TYPE= "WASHSHAKE"         (ENTER "WASH" OR "WASHSHAKE")
