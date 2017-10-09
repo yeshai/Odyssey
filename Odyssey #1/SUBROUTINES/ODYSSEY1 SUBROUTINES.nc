@@ -75,11 +75,10 @@ M99
 (***********************************************************
 
 OPARTPREHEAT
-G01 X612 Z-5 F20000             	(MOVE TO PREHEAT STATION)
+G01 X#PREHEAT_POSITION Z-5 F20000             	(MOVE TO PREHEAT STATION)
 G01 Z#PREHEAT_HEIGHT F4000
 G04 P#PREHEAT_DWELL                      (PREHEAT DWELL
 G01 Z-5                                  (RETURN TO PROCESS POSITION
-ENDIF
 M99
 
 (***********************************************************

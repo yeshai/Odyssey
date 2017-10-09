@@ -8,11 +8,13 @@ G52 X0 Y0 Z0  (Calibration Offsets)
 
 (DECLARE VARIABLES HERE
 (***********************************************************
+REAL #PART_THICKNESS
 REAL #ANGHYP
 REAL #VERTCHANGE
 REAL #PALLETWIDTH
 (***********************************************************
-STRING #FLUX_USED    STRING #FLUX_POT_CHOICE
+STRING #FLUX_USED
+STRING #FLUX_POT_CHOICE
 STRING #FLUX_USED_BETWEEN
 INTEGER #FLUX_BETWEEN_FLAG
 REAL #FLUX_HEIGHT
@@ -24,6 +26,7 @@ REAL #FLUX_DIP_SPEED_OUT
 REAL #FLUX_DIP_DEPTH
 (***********************************************************
 STRING #PREHEAT_USED
+REAL #PREHEAT_POSITION
 REAL #PREHEAT_HEIGHT
 REAL #PREHEAT_DWELL
 (***********************************************************
@@ -51,6 +54,7 @@ REAL #DRY_DWELL
 (***********************************************************
 
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************
+#PART_THICKNESS = 1
 
 (***********************************************************
 #FLUX_USED= "NO" 	        (ENTER "YES" OR "NO"
@@ -66,19 +70,19 @@ REAL #DRY_DWELL
 
 (***********************************************************
 #PREHEAT_USED= "YES" 	        (ENTER "YES" OR "NO"
-#PREHEAT_HEIGHT= -90
+#PREHEAT_POSITION = 625
+#PREHEAT_HEIGHT= -90 + #PART_THICKNESS
 #PREHEAT_DWELL= 60
 
 (***********************************************************
 #SOLDER_POT_CHOICE= "LEADDRAG"
-#SOLDER_HEIGHT= -62.0
+#SOLDER_HEIGHT= -67 + #PART_THICKNESS
 #SPEED_ACROSS_WAVE= 600
 #SOLDER_POSITION= 1620.0
 #ANGLE_OVER_WAVE= 0
 #PALLETWIDTH= 170              	(CHANGING THE PALLET WIDTH TO LESS ALLOWS THE DRAG ANGLE TO BE INCREASED
 (***********************************************************
-#WASH_USED= "NO"
-                (ENTER "YES" OR "NO"
+#WASH_USED= "NO" (ENTER "YES" OR "NO"
 #WASH_TYPE= "WASHSHAKE"         (ENTER "WASH" OR "WASHSHAKE" TO SELECT STATIONARY OR SHAKING WASH
 #WASH_HEIGHT= -103.0		(SET TO THE DEPTH YOU WANT TO SUBMERGE THE PART IN THE WASH
 #NUMBER_OF_WASH_SHAKES= 30      (IF SHAKE WASH SELECTED
@@ -112,7 +116,6 @@ ENDIF
 
 M98 PPUMP1START
 M98 PLEADDRAG		 	(MOVE TOOL HEAD TO SOLDER POT POSITION AND DIP
-ENDIF
 
 IF #WASH_USED= "YES" THEN
 M98 PPARTWASH			(MOVE TO WASH STATION AND WASH
