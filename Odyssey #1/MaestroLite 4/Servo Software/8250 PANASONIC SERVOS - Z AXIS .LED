@@ -1,0 +1,18 @@
+Servo drive eeprom data
+KP = 140
+KD = 1000
+KI = 500
+IL = 1500
+PWM limit = 244
+Current Limit = 0
+Position error limit = 1000
+Servo rate = 1
+Deadband comp. = 0
+Velocity = 100000
+Acceleration = 1000
+Servo on power-up = 1
+Output port 0 = 0x00
+Output port 1 = 0x00
+Output port 2 = 0x00
+Step rate = 5
+Step/Direction Mode = 1

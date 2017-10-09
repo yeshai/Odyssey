@@ -1,9 +1,15 @@
+( ********************** TYPICAL SETTINGS ***********************)
+( ********************** AUTOFLUX = False ***********************)
+( ********************** IR PREHEAT = False *********************)
+( ********************** PREHEAT TIME [s] = 60 ******************)
+( ********************** SOLDER SPEED [mm/s] = 600 **************)
+( ********************** SOLDER PUMP [RPM] = 650 ****************)
+(***********************************************************)
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
 M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
 (Initialization Complete)
 G52 X0 Y0 Z0  (Calibration Offsets)
 ( ********************** MAIN G-CODE ***********************)
-
 (DECLARE VARIABLES HERE
 (***********************************************************)
 REAL #ANGHYP

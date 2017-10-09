@@ -5204,7 +5204,7 @@ m_bIsEditable=1
 m_bDisplay=1
 m_bIsEditable=1
 [uservarusage6]
-m_bDisplay=0
+m_bDisplay=1
 m_bIsEditable=1
 [uservarusage7]
 m_bDisplay=0
