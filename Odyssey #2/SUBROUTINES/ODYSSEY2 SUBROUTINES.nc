@@ -5,7 +5,6 @@ M21                 (DROSS WIPER UP)
 M23                 (AIR KNIFE DOWN)
 G58                 (SET PROGRAM 0, FIXTURE OFFSET)
 G30 P3            (SEEK FIXTURE 0, REFERENCE POINT)
-(G27                 (SEEK HOME)
 G01 A0 F2880
 M98 PLIGHT_GREEN_ON (TURN GREEN LIGHT ON)
 M99
@@ -29,6 +28,12 @@ G04 P#PREHEAT_TIME                   (WAIT AT PREHEAT)
 G01 Z-5                                  (RETURN TO PROCESS POSITION)
 M99
 (***********************************************************)
+OPUMPSTART
+G210 P1
+M16 M34 S#PUMP1RPM          (Pump ON, N2 ON)
+(M16 M34 S100         (Pump ON, N2 ON)
+M99
+(***********************************************************)
 OSOLDERDIP
 G01 A0 F1080
 G30 P6 (GO TO SOLDER REFERENCE PT.)
@@ -42,12 +47,6 @@ M98 PANGLECALCOPERATOR_     (CALCULATE ANGLE OF EXTRACTION)
 G01 Z-5 F4000           (RETURN TO PROCESS POSITION)
 G01 A0 F1080
 M17 M35           (TURN OFF PUMP1 AND NITROGEN1)
-M99
-(***********************************************************)
-OPUMPSTART
-G210 P1
-M16 M34 S#PUMP1RPM       		(Pump ON, N2 ON)
-(M16 M34 S100      		(Pump ON, N2 ON)
 M99
 (***********************************************************)
 OPARTWASH

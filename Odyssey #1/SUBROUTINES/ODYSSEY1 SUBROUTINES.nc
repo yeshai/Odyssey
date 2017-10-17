@@ -1,31 +1,65 @@
+(***********************************************************)
+OLOAD
+M98 PLIGHT_ALL_OFF (TURN LIGHTS OFF)
+M21               (DROSS WIPER UP)
+M23               (AIR KNIFE DOWN)
+G30 P2            (NEAR HOME)
+G27                 (SEEK HOME)
+G01 X15 Z-5 F2000
+G58
+G01 A0 F2880
+M00 P0              (wait for cycle start)
+M98 PLIGHT_ALL_OFF
+M98 PLIGHT_GREEN_ON
+M99
+(***********************************************************)
+OPARTLOAD
+G58
+G01 A0 F1080
+G01 X100  Z-5 F20000              (MOVE TO LOAD STATION, Z UP)
+M99
+(***********************************************************)
+OFLUXPUMPSTART
+M29                               (START FLUX PUMP)
+M99
+(***********************************************************)
+OFLUX
+G01 X838 Z-5 F20000               (MOVE TO FLUX STATION)(original 845)
+G01 Z#FLUX_HEIGHT+5 F4000
+G01 Z#FLUX_HEIGHT-#FLUX_DIP_DEPTH F#FLUX_DIP_SPEED_IN            (APPLY FLUX
+G04 P#FLUX_DWELL                        (FLUX DWELL
+G01 Z#FLUX_HEIGHT+5 F#FLUX_DIP_SPEED_OUT
+G01 Z-5 A0 F4000                        (RETURN TO PROCESS POSITION
+G01 X785 Z-5 F#FLUX_DIP_SPEED_OUT A#FLUX_DRIP_ANGLE F1080 (DRIP ANGLE
+G04 P#FLUX_DRIP_DWELL     (DRIP TIME
+G01 Z-5   A0                            (RETURN TO PROCESS POSITION
+M99
+(***********************************************************)
+OFLUXPUMPSTOP
+M30                               (STOP FLUX PUMP)
+M99
+(***********************************************************)
+OPREHEAT
+G01 X#PREHEAT_POSITION Z-5 F20000               (MOVE TO PREHEAT STATION)
+G01 Z#PREHEAT_HEIGHT F4000
+G04 P#PREHEAT_DWELL                      (PREHEAT DWELL
+G01 Z-5                                  (RETURN TO PROCESS POSITION
+M99
+(***********************************************************)
 OPUMP1START
 G210 P1
 M16 M34 S#PUMP1RPM       		(Pump ON, N2 ON)
 M99
-
 (***********************************************************
-
 OPUMP2START
 G210 P2
 M18 M41 S#PUMP2RPM
 M99
-
 (***********************************************************
-
 OSOLDERPUMPSTOP
 M17 M35                         	(Pump OFF, N2 OFF)
 M99
-
 (***********************************************************
-
-OPARTLOAD
-G58
-G01 A0 F1080
-G01 X100  Z-5 F20000           		(MOVE TO LOAD STATION, Z UP)
-M99
-
-(***********************************************************
-
 OPARTUNLOAD
 G58
 G01 A0 F1080
@@ -34,54 +68,9 @@ M99
 
 (***********************************************************
 
-OFLUX1
-G01 X838 Z-5 F20000             	(MOVE TO FLUX STATION)(original 845)
-G01 Z#FLUX_HEIGHT+5 F4000
-G01 Z#FLUX_HEIGHT-#FLUX_DIP_DEPTH F#FLUX_DIP_SPEED_IN            (APPLY FLUX
-G04 P#FLUX_DWELL                        (FLUX DWELL
-G01 Z#FLUX_HEIGHT+5 F#FLUX_DIP_SPEED_OUT
-G01 Z-5 A0 F4000                        (RETURN TO PROCESS POSITION
-G01 X785 Z-5 F#FLUX_DIP_SPEED_OUT A#FLUX_DRIP_ANGLE F1080	(DRIP ANGLE
-G04 P#FLUX_DRIP_DWELL			(DRIP TIME
-G01 Z-5   A0                            (RETURN TO PROCESS POSITION
-M99
 
-(***********************************************************
 
-OFLUX2
-G01 X1033 Z-5 F20000            (MOVE TO FLUX STATION)(original 1040)
-G01 Z#FLUX_HEIGHT+5 F4000
-G01 Z#FLUX_HEIGHT-#FLUX_DIP_DEPTH F#FLUX_DIP_SPEED_IN            (APPLY FLUX
-G04 P#FLUX_DWELL                        (FLUX DWELL
-G01 Z#FLUX_HEIGHT+5 F#FLUX_DIP_SPEED_OUT
-G01 Z-5 A0 F4000                        (RETURN TO PROCESS POSITION
-G01 X980 Z-5 F#FLUX_DIP_SPEED_OUT A#FLUX_DRIP_ANGLE F1080	(DRIP ANGLE
-G04 P#FLUX_DRIP_DWELL			(DRIP TIME
-G01 Z-5   A0                            (RETURN TO PROCESS POSITION
-M99
 
-(***********************************************************
-
-OFLUXPUMPSTART
-M29                             	(START FLUX PUMP)
-M99
-
-(***********************************************************
-
-OFLUXPUMPSTOP
-M30                             	(STOP FLUX PUMP)
-M99
-
-(***********************************************************
-
-OPARTPREHEAT
-G01 X#PREHEAT_POSITION Z-5 F20000             	(MOVE TO PREHEAT STATION)
-G01 Z#PREHEAT_HEIGHT F4000
-G04 P#PREHEAT_DWELL                      (PREHEAT DWELL
-G01 Z-5                                  (RETURN TO PROCESS POSITION
-M99
-
-(***********************************************************
 
 OLEAD
 G01 X1365 Z-5 F20000 			(MOVE TO DIP STATION)
@@ -209,21 +198,6 @@ M99
 
 ODRYOFF
 M23 M25                        			(TURN OFF AIR KNIFE, PREHEAT)
-M99
-
-(***********************************************************
-
-OLOAD
-M98 PLIGHT_ALL_OFF
-M21 M23
-G30 P2	 					(NEAR HOME)
-G27	       					(SEEK HOME)
-G01 X15 Z-5 F2000
-G58
-G01 A0 F2880
-M00 P0     					(wait for cycle start)
-M98 PLIGHT_ALL_OFF
-M98 PLIGHT_GREEN_ON
 M99
 
 (***********************************************************
