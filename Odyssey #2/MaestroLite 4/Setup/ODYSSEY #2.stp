@@ -1973,7 +1973,7 @@ m_posPoint.5=0.000000000000
 [refpoint4]
 m_strDescription=FLUX
 m_bIsMach=1
-m_posPoint.0=0.000000000000
+m_posPoint.0=808.000000000000
 m_posPoint.1=0.000000000000
 m_posPoint.2=0.000000000000
 m_posPoint.3=0.000000000000
