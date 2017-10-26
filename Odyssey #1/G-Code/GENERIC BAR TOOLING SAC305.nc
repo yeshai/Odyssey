@@ -54,7 +54,7 @@ REAL #DRY_DWELL
 (***********************************************************
 
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************
-#PART_THICKNESS = 1
+#PART_THICKNESS = 1 (IN mm)
 
 (***********************************************************
 #FLUX_USED= "NO" 	        (ENTER "YES" OR "NO"
