@@ -24,7 +24,7 @@ M29                               (START FLUX PUMP)
 M99
 (***********************************************************)
 OFLUX
-G01 X838 Z-5 F20000               (MOVE TO FLUX STATION)(original 845)
+G01 X838 Z-5 F20000               (MOVE TO FLUX STATION)
 G01 Z#FLUX_HEIGHT+5 F4000
 G01 Z#FLUX_HEIGHT-#FLUX_DIP_DEPTH F#FLUX_DIP_SPEED_IN            (APPLY FLUX
 G04 P#FLUX_DWELL                        (FLUX DWELL
