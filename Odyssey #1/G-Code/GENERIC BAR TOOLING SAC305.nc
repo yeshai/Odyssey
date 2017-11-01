@@ -54,7 +54,7 @@ REAL #DRY_DWELL
 (***********************************************************
 
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************
-#PART_THICKNESS = 0 (mm)
+#PART_THICKNESS = 1 (mm)
 (***********************************************************
 #FLUX_USED= "YES" 	        (ENTER "YES" OR "NO"
 #FLUX_POT_CHOICE= "FLUX1" 	(ENTER "FLUX1" OR "FLUX2" TO SELECT FLUX 1 OR FLUX 2
@@ -71,11 +71,11 @@ REAL #DRY_DWELL
 #PREHEAT_USED= "YES" 	        (ENTER "YES" OR "NO"
 #PREHEAT_POSITION = 615
 #PREHEAT_HEIGHT= -90 + #PART_THICKNESS
-#PREHEAT_DWELL= 10
+#PREHEAT_DWELL= 45
 
 (***********************************************************
 #SOLDER_POT_CHOICE= "LEADFREEDRAG"
-#SOLDER_HEIGHT_PBF= -80.7 + #PART_THICKNESS
+#SOLDER_HEIGHT_PBF= -81 + #PART_THICKNESS
 #SPEED_ACROSS_WAVE_PBF= 600
 #SOLDER_POSITION_PBF = 1900
 #ANGLE_OVER_WAVE_PBF= 0
