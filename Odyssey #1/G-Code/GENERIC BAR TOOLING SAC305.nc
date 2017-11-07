@@ -1,22 +1,14 @@
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #1\SUBROUTINES\ODYSSEY1 SUBROUTINES.nc
-M98 PLOAD
-(Initialization Complete )
-G52 X0 Y0 Z0  (Calibration Offsets)
+M98 PLOAD (START LOAD ROUTING)
+G52 X0 Y0 Z0  (SET CALIBRATION OFFSETS)
 
-
-( ********************** MAIN G-CODE ***********************
-
-(DECLARE VARIABLES HERE
-(***********************************************************
+(****************************** DECLARE VARIABLES HERE ****************************)
 REAL #PART_THICKNESS
 REAL #ANGHYP
 REAL #VERTCHANGE
 REAL #PALLETWIDTH
-(***********************************************************
+(***********************************************************************************)
 STRING #FLUX_USED
-STRING #FLUX_POT_CHOICE
-STRING #FLUX_USED_BETWEEN
-INTEGER #FLUX_BETWEEN_FLAG
 REAL #FLUX_HEIGHT
 REAL #FLUX_DWELL
 REAL #FLUX_DRIP_DWELL
@@ -24,18 +16,21 @@ REAL #FLUX_DRIP_ANGLE
 REAL #FLUX_DIP_SPEED_IN
 REAL #FLUX_DIP_SPEED_OUT
 REAL #FLUX_DIP_DEPTH
-(***********************************************************
+
+(***********************************************************************************)
 STRING #PREHEAT_USED
 REAL #PREHEAT_POSITION
 REAL #PREHEAT_HEIGHT
 REAL #PREHEAT_DWELL
-(***********************************************************
+
+(***********************************************************************************)
 STRING #SOLDER_POT_CHOICE
 REAL #SOLDER_HEIGHT_PBF
 REAL #SPEED_ACROSS_WAVE_PBF
 REAL #ANGLE_OVER_WAVE_PBF
 REAL #SOLDER_POSITION_PBF
-(***********************************************************
+
+(***********************************************************************************)
 STRING #WASH_TYPE
 STRING #WASH_USED
 REAL #WASH_HEIGHT
@@ -45,21 +40,17 @@ REAL #WASH_DRIP_DWELL
 REAL #WASH_DRIP_ANGLE
 REAL #WASH_SPEED_IN
 REAL #WASH_SPEED_OUT
-(***********************************************************
+
+(***********************************************************************************)
 STRING #DRY_TYPE
 STRING #DRY_USED
 REAL #DRY_HEIGHT
 REAL #NUMBER_OF_DRY_SHAKES
 REAL #DRY_DWELL
-(***********************************************************
 
-(********************** OPERATOR ENTER PARAMETERS HERE ***********************
-
-(***********************************************************
-#FLUX_USED= "YES" 	        (ENTER "YES" OR "NO"
-#FLUX_POT_CHOICE= "FLUX1" 	(ENTER "FLUX1" OR "FLUX2" TO SELECT FLUX 1 OR FLUX 2
-#FLUX_USED_BETWEEN= "NO"    	(ENTER YES OR NO TO FLUX BETWEEN DIPS FOR PB-PBF OR PBF-PB
-#FLUX_HEIGHT= -99.0 		(SET THE BOTTOM OF THE LEAD TO JUST TOUCH THE SURFACE OF THE FLUX
+(******************************** SET PARAMETER HERE *******************************)
+#FLUX_USED= "YES" 	                (ENTER "YES" OR "NO")
+#FLUX_HEIGHT= -99.0 		            (SET SO PINS/PADS TOUCH FLUX-SURFACE)
 #FLUX_DWELL= 0.5
 #FLUX_DRIP_DWELL= 2
 #FLUX_DRIP_ANGLE= 35
@@ -67,66 +58,65 @@ REAL #DRY_DWELL
 #FLUX_DIP_SPEED_OUT= 6000
 #FLUX_DIP_DEPTH= 1
 
-(***********************************************************
-#PREHEAT_USED= "YES" 	        (ENTER "YES" OR "NO"
+(***********************************************************************************)
+#PREHEAT_USED= "YES" 	              (ENTER "YES" OR "NO")
 #PREHEAT_POSITION = 615
 #PREHEAT_HEIGHT= -90
 #PREHEAT_DWELL= 60
 
-(***********************************************************
-#SOLDER_POT_CHOICE= "LEADFREEDRAG"
-#SOLDER_HEIGHT_PBF= -80
-#SPEED_ACROSS_WAVE_PBF= 1000
-#SOLDER_POSITION_PBF = 1930 (BAR EDGE ~= WAVE START)
-#ANGLE_OVER_WAVE_PBF= 0
-#PALLETWIDTH= 150             	(CHANGING THE PALLET WIDTH TO LESS ALLOWS THE DRAG ANGLE TO BE INCREASED
-(***********************************************************
+(***********************************************************************************)
+#SOLDER_POT_CHOICE= "LEADFREEDRAG"  (LEAD-FREE SAC305 POT)
+#SOLDER_HEIGHT_PBF= -80             (LEAD-FREE SOLDER POT NOZZLE HEIGHT, Z-POSITION)
+#SPEED_ACROSS_WAVE_PBF= 1000        (SPEED ACROSS LEAD-FREE SOLDER WAVE)
+#SOLDER_POSITION_PBF = 1930         (BAR EDGE ~= WAVE START)
+#ANGLE_OVER_WAVE_PBF= 0             (LEAD-FREE SOLDER POT X-POSITION)
+#PALLETWIDTH= 150             	    (LOWER PALLETWIDTH ALLOWS FOR HIGHER DRAG ANGLE)
+
+(***********************************************************************************)
 #WASH_USED= "NO" (ENTER "YES" OR "NO"
-#WASH_TYPE= "WASHSHAKE"         (ENTER "WASH" OR "WASHSHAKE" TO SELECT STATIONARY OR SHAKING WASH
-#WASH_HEIGHT= -103.0		(SET TO THE DEPTH YOU WANT TO SUBMERGE THE PART IN THE WASH
-#NUMBER_OF_WASH_SHAKES= 30      (IF SHAKE WASH SELECTED
-#WASH_DWELL= 10                 (IF STATIONARY WASH SELECTED
+#WASH_TYPE= "WASHSHAKE"             (ENTER "WASH" OR "WASHSHAKE")
+#WASH_HEIGHT= -103.0		            (SET SO PINS/PADS TOUCH WASH-SURFACE)
+#NUMBER_OF_WASH_SHAKES= 30          (IF SHAKE WASH SELECTED)
+#WASH_DWELL= 10                     (IF STATIONARY WASH SELECTED)
 #WASH_DRIP_DWELL= 4
 #WASH_DRIP_ANGLE= 20
 #WASH_SPEED_IN= 4000
 #WASH_SPEED_OUT= 6000
 
-(***********************************************************
-#DRY_USED= "NO"                 (ENTER "YES" OR "NO"
-#DRY_TYPE= "DRY"           	(ENTER "DRY" OR "DRYSHAKE" TO SELECT STATIONARY OR VERTICAL OSCILLATIONS
-#DRY_HEIGHT= -10		(SET THE HEIGHT THAT GIVES THE BEST COVERAGE FOR THE AIR KNIFE
+(***********************************************************************************)
+#DRY_USED= "NO"                     (ENTER "YES" OR "NO")
+#DRY_TYPE= "DRY"           	        (ENTER "DRY" OR "DRYSHAKE")
+#DRY_HEIGHT= -10		                (SET HEIGHT BEST COVERAGE)
 #NUMBER_OF_DRY_SHAKES= 5
 #DRY_DWELL= 2
 
-(***********************************************************
-
-(*********************** END OF OPERATOR DATA INPUT ***************************
+(******************************* ROBOTIC OPPERATION ********************************)
 
 M98 PPARTLOAD
-G01 X100 Z-5 F4000            	(MOVE TOOL HEAD INTO LOAD POSITION)
+G01 X100 Z-5 F4000            	    (MOVE TOOL HEAD INTO LOAD POSITION)
 
 IF #FLUX_USED= "YES" THEN
-M98 PFLUX	(MOVE TOOL HEAD TO FLUX POSITION AND FLUX
+M98 PFLUX	                          (MOVE TO FLUX POSITION)
 ENDIF
 
 IF #PREHEAT_USED= "YES" THEN
-M98 PPREHEAT		(MOVE TO PREHEAT POSITION AND PREHEAT
+M98 PPREHEAT		                    (MOVE TO PREHEAT POSITION)
 ENDIF
 
-M98 PPUMP2START
-M98 PLEADFREEDRAG		 	(MOVE TOOL HEAD TO SOLDER POT POSITION AND DIP
+M98 PPUMP2START                     (TURN ON SOLDER PUMP)
+M98 PLEADFREEDRAG		 	              (MOVE TO SOLDER POT AND DIP)
 
 IF #WASH_USED= "YES" THEN
-M98 PPARTWASH			(MOVE TO WASH STATION AND WASH
+M98 PPARTWASH			                  (MOVE TO WASH STATION AND WASH)
 ENDIF
 
 IF #DRY_USED= "YES" THEN
-M98 PPARTDRY			(TURN ON AIR KNIFE FOR DRY ASSIST
+M98 PPARTDRY			                  (TURN ON AIR KNIFE)T
 ENDIF
 
-M98 PSOLDERPUMPSTOP
+M98 PSOLDERPUMPSTOP                 (TURN OFF SOLDER PUMP)
 
-M98 PPARTUNLOAD			(MOVE TO UNLOAD POSITION
-G56
-M98 PUNLOAD
-M30
+M98 PPARTUNLOAD                     (MOVE TO PART UNLOAD POSITION, X=100)
+G56                                 (SET PROGRAM ZERO AND FIXTURE OFFSETS)
+M98 PUNLOAD                         (MOVE TO UNLOAD POSITION, X=1.1)
+M30                                 (END PROGRAM, RESET)
