@@ -425,7 +425,7 @@ m_dScale=40000.000000000000
 [axis3]
 m_bUseAxis=1
 m_dBacklash=0.000000000000
-m_dAxisSize=180.000000000000
+m_dAxisSize=140.000000000000
 m_bSafeInterpolate=0
 m_bCovert=0
 m_bRightHanded=1
