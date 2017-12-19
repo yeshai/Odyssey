@@ -1,9 +1,8 @@
-#R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
-M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
-(Initialization Complete)
-G52 X0 Y0 Z0  (Calibration Offsets)
-G01 X900 F20000 (Move to X=900)
-G04 P2 (Wait 2 Seconds)
+#R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc (SUBROUTINE LOCATION)
+M98 PLOAD (TURN ON DROSS WIPER, AIR-KNIFE AND LIGHTS. THEN, HOME)
+G52 X0 Y0 Z0  (CALIBRATION OFFSET)
+G01 X900 F20000 (MOVE TO X=900)
+G04 P2 (WAIT 2 SECONDS)
 
 M98 PPARTUNLOAD			(MOVE TO UNLOAD POSITION)
 G56						(PROGRAM ZERO)
