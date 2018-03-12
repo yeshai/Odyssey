@@ -1,9 +1,9 @@
 ( ********************** TYPICAL SETTINGS ***********************)
-( ********************** AUTOFLUX = False ***********************)
-( ********************** IR PREHEAT = False *********************)
+( ********************** AUTOFLUX = True  ***********************)
+( ********************** IR PREHEAT = True  *********************)
 ( ********************** PREHEAT TIME [s] = 60 ******************)
-( ********************** SOLDER SPEED [mm/s] = 600 **************)
-( ********************** SOLDER PUMP [RPM] = 650 ****************)
+( ********************** SOLDER SPEED [mm/s] = 500 **************)
+( ********************** SOLDER PUMP [RPM] = 500 ****************)
 (***********************************************************)
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
 M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
@@ -51,7 +51,7 @@ REAL #DRY_TIME
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************)
 
 (***********************************************************)
-#FLUX_HEIGHT= -97.0		 (SET THE BOTTOM OF THE LEAD TO JUST TOUCH THE SURFACE OF THE FLUX
+#FLUX_HEIGHT= -75.5 + #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
 #FLUX_TIME= 0.5            (TIME IN FLUX)
 #FLUX_DRIP_TIME= 3     (TIME TO DRIP OFF FLUX)
 #FLUX_DRIP_ANGLE= 40    (ANGLE TO DRIP OFF FLUX)
@@ -64,7 +64,7 @@ REAL #DRY_TIME
 
 (***********************************************************)
 #PALLETWIDTH= 145 (PALLET WIDTH IS NEGATIVE TO ACCOUNT FOR TRAVEL DIRECTION)
-#SOLDER_HEIGHT= -68 + #PART_THICKNESS (@PUMP = 550 RPM)
+#SOLDER_HEIGHT= -70 + #PART_THICKNESS (@PUMP = 550 RPM)
 #ANGLE_OVER_WAVE= 0
 (#SOLDER_POSITION= 1209 (CHANGED TO REFERENCE PT.) )
 (***********************************************************)

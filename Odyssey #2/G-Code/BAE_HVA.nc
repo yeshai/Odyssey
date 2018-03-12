@@ -1,9 +1,9 @@
 ( ********************** TYPICAL SETTINGS ***********************)
 ( ********************** AUTOFLUX = False ***********************)
 ( ********************** IR PREHEAT = False *********************)
-( ********************** PREHEAT TIME [s] = 60 ******************)
-( ********************** SOLDER SPEED [mm/s] = 500 **************)
-( ********************** SOLDER PUMP [RPM] = 550 ****************)
+( ********************** PREHEAT TIME [s] = 30 ******************)
+( ********************** SOLDER SPEED [mm/s] = 300 **************)
+( ********************** SOLDER PUMP [RPM] = 600 ****************)
 (***********************************************************)
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
 M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
@@ -122,7 +122,7 @@ G04 P#PREHEAT_TIME          (PAUSE TIME)
 #VERTCHANGE= #ANGHYP*SIN[#ANGLE_OVER_WAVE]
 G91 (INCREMENTAL MODE)
 G01 X-#PH_DISTANCE Z#VERTCHANGE F#SPEED_ACROSS_WAVE
-G01 Z20 F#SPEED_ACROSS_WAVE (MOVE UP 16mm)
+G01 Z23 F#SPEED_ACROSS_WAVE (MOVE UP 18mm)
 G90 (ABSOLUTE MODE)
 G01 A92 F50000(FLIP)
 G04 P10
@@ -143,3 +143,4 @@ M98 PPARTUNLOAD			(MOVE TO UNLOAD POSITION)
 G56
 M98 PUNLOAD
 M30 (END PROGRAM AND RESET)
+
