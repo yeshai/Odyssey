@@ -60,7 +60,7 @@ REAL #ZCHANGE
 
 (***********************************************************
 #PREHEAT_USED= "NO" 	        (ENTER "YES" OR "NO"
-#PREHEAT_POSITION = 625
+#PREHEAT_POSITION = 570
 #PREHEAT_HEIGHT= -65 + #PART_THICKNESS
 #PREHEAT_DWELL= 30
 
