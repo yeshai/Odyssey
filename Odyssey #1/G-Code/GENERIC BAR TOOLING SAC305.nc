@@ -24,10 +24,10 @@ REAL #PREHEAT_DWELL
 
 (***********************************************************************************)
 STRING #SOLDER_POT_CHOICE
-REAL #SOLDER_HEIGHT_PBF
-REAL #SPEED_ACROSS_WAVE_PBF
-REAL #ANGLE_OVER_WAVE_PBF
-REAL #SOLDER_POSITION_PBF
+REAL #SOLDER_HEIGHT
+REAL #SPEED_OVER_WAVE
+REAL #ANGLE_OVER_WAVE
+REAL #SOLDER_POSITION
 
 (***********************************************************************************)
 STRING #WASH_TYPE
@@ -48,8 +48,8 @@ REAL #NUMBER_OF_DRY_SHAKES
 REAL #DRY_DWELL
 
 (******************************** SET PARAMETER HERE *******************************)
-#FLUX_USED= "NO" 	                (ENTER "YES" OR "NO")
-#FLUX_HEIGHT= -99.0 		            (SET SO PINS/PADS TOUCH FLUX-SURFACE)
+#FLUX_USED= "YES" 	                (ENTER "YES" OR "NO")
+#FLUX_HEIGHT= -96.0 		            (SET SO PINS/PADS TOUCH FLUX-SURFACE)
 #FLUX_DWELL= 0.5
 #FLUX_DRIP_DWELL= 2
 #FLUX_DRIP_ANGLE= 35
@@ -65,10 +65,10 @@ REAL #DRY_DWELL
 
 (***********************************************************************************)
 #SOLDER_POT_CHOICE= "LEADFREEDRAG"  (LEAD-FREE SAC305 POT)
-#SOLDER_HEIGHT_PBF= -81.3            (LEAD-FREE SOLDER POT NOZZLE HEIGHT, Z-POSITION)
-#SPEED_ACROSS_WAVE_PBF= 275        (SPEED ACROSS LEAD-FREE SOLDER WAVE)
-#SOLDER_POSITION_PBF = 1930         (BAR EDGE ~= WAVE START)
-#ANGLE_OVER_WAVE_PBF= 0             (LEAD-FREE SOLDER POT X-POSITION)
+#SOLDER_HEIGHT = -81.5            (LEAD-FREE SOLDER POT NOZZLE HEIGHT, Z-POSITION)
+#SPEED_OVER_WAVE= 275        (SPEED ACROSS LEAD-FREE SOLDER WAVE)
+#SOLDER_POSITION = 1930         (BAR EDGE ~= WAVE START)
+#ANGLE_OVER_WAVE = 0             (LEAD-FREE SOLDER POT X-POSITION)
 #PALLETWIDTH= 150             	    (LOWER PALLETWIDTH ALLOWS FOR HIGHER DRAG ANGLE)
 
 (***********************************************************************************)
