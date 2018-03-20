@@ -7,7 +7,7 @@
 ( ********************** PREHEAT TEMP = 400 *********************)
 ( ********************** PREHEAT TIME [s] = 30 ******************)
 ( ********************** SOLDER SPEED [mm/s] = 300 **************)
-( ********************** SOLDER PUMP [RPM] = 600 ****************)
+( ********************** SOLDER PUMP [RPM] = 675 ****************)
 (***********************************************************)
 
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #1\SUBROUTINES\ODYSSEY1 SUBROUTINES.nc
@@ -56,13 +56,13 @@ REAL #ZCHANGE
 
 
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************
-#PART_THICKNESS = 0
+#PART_THICKNESS = 2
 #CENTER = 180 (IN MM)
 (***********************************************************
 #FLUX_USED= "YES" 	        (ENTER "YES" OR "NO"
 #FLUX_POT_CHOICE= "FLUX1" 	(ENTER "FLUX1" OR "FLUX2" TO SELECT FLUX 1 OR FLUX 2
 #FLUX_USED_BETWEEN= "NO"    	(ENTER YES OR NO TO FLUX BETWEEN DIPS FOR PB-PBF OR PBF-PB
-#FLUX_HEIGHT= -75	+ #PART_THICKNESS	(SET THE BOTTOM OF THE LEAD TO JUST TOUCH THE SURFACE OF THE FLUX
+#FLUX_HEIGHT= -102.5 + #PART_THICKNESS	(SET THE BOTTOM OF THE LEAD TO JUST TOUCH THE SURFACE OF THE FLUX
 #FLUX_DWELL= 0.5
 #FLUX_DRIP_DWELL= 3
 #FLUX_DRIP_ANGLE= 40
@@ -72,14 +72,14 @@ REAL #ZCHANGE
 
 (***********************************************************
 #PREHEAT_USED= "YES" 	        (ENTER "YES" OR "NO"
-#PREHEAT_POSITION = 625
-#PREHEAT_HEIGHT= -65 + #PART_THICKNESS
+#PREHEAT_POSITION = 614
+#PREHEAT_HEIGHT= -93 + #PART_THICKNESS
 #PREHEAT_DWELL= 30
 
 (***********************************************************
 #SOLDER_POT_CHOICE= "LEADRAG"
-#SOLDER_HEIGHT= -60 + #PART_THICKNESS
-#SPEED_ACROSS_WAVE= 600
+#SOLDER_HEIGHT= -63 + #PART_THICKNESS
+#SPEED_ACROSS_WAVE= 300
 #SOLDER_POSITION = 1606
 #ANGLE_OVER_WAVE= #ANGVAL
 #PALLETWIDTH= 110              	(CHANGING THE PALLET WIDTH TO LESS ALLOWS THE DRAG ANGLE TO BE INCREASED
