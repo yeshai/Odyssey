@@ -2,7 +2,7 @@
 ( ********************** AUTOFLUX = True  ***********************)
 ( ********************** IR PREHEAT = True  *********************)
 ( ********************** PREHEAT TIME [s] = 60 ******************)
-( ********************** SOLDER SPEED [mm/s] = 500 **************)
+( ********************** SOLDER SPEED [mm/min] = 500 **************)
 ( ********************** SOLDER PUMP [RPM] = 500 ****************)
 (***********************************************************)
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
