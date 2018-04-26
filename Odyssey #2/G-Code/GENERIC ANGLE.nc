@@ -21,6 +21,7 @@ REAL #SOLDER_HEIGHT
 REAL #ANGHYP
 REAL #VERTCHANGE
 REAL #PALLETWIDTH
+(ADDITIONAL DETAILS FOR GEOMETRY @ https://www.desmos.com/calculator/x12r12jxh2)
 REAL #RADIUS
 REAL #PI
 REAL #XC (X COORDIANTE ON CIRCLE)
@@ -29,14 +30,19 @@ REAL #M (TANGENT LINE SLOPE)
 REAL #ZINT (TANGENT LINE INTERCEPT)
 REAL #XL (X COORDIANTE ON TANGENT LINE)
 REAL #ZL (Z COORDIANTE ON TANGENT LINE)
+REAL #CA (X OFFSET ON CIRCLE)
+REAL #CB (Y OFFSET ON CIRCLE)
+REAL #ANG_ADJ (ADJUSTED ANGLE)
+REAL #ANGLE_OVER_WAVE
+
 (***********************************************************)
 (********************** SET PARAMETERS *********************)
 
 
 (*********************** CONSTANTS *************************)
-#RADIUS = 166.0652
+#RADIUS = 166.0652 + 37.14 (37.14 FROM BAR TOOL)
 #PI = 3.1416
-
+#ANGLE_OVER_WAVE = 1
 
 (************************** FLUX ***************************)
 #FLUX_HEIGHT= -75.5 + #PART_THICKNESS	
@@ -51,7 +57,7 @@ REAL #ZL (Z COORDIANTE ON TANGENT LINE)
 #PREHEAT_HEIGHT= -65 + #PART_THICKNESS
 
 (************************ SOLDER ***************************)
-#PALLETWIDTH= 60.5522
+#PALLETWIDTH= 152.4
 #SOLDER_HEIGHT= -70 + #PART_THICKNESS 
 
 (********************* MAIN PROGRAM ************************)

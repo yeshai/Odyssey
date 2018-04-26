@@ -58,14 +58,17 @@ M17 M35           				(PUMP OFF, N2 OFF)
 M99
 (***********************************************************)
 OANGLE_COMPENSATE
-#XC = #RADIUS*COS[-90+#ANGLE_OVER_WAVE]
-#ZC = #RADIUS*SIN[-90+#ANGLE_OVER_WAVE]
-#M = -#XC/#ZC 
+#CA = 0
+#CB = #RADIUS
+#ANG_ADJ = -90+#ANGLE_OVER_WAVE
+#XC = #CA + #RADIUS*COS[#ANG_ADJ]
+#ZC = #CB + #RADIUS*SIN[#ANG_ADJ]
+#M = [#XC + #CA]/[#CB-#ZC]
 #ZINT = #ZC - #M*#XC
 #XL = #XC - [#PALLETWIDTH/2]*SQRT[1/[1+[#M*#M]]]
 #ZL = #ZC - #M*[#PALLETWIDTH/2]*SQRT[1/[1+[#M*#M]]]
 G91
-G01 X#XC Z#ZC
+G01 X#XL Z#ZL
 G90
 M99
 (***********************************************************)
