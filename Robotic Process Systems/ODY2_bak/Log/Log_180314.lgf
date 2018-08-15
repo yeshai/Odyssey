@@ -1,0 +1,318 @@
+======> Tracker report (03/14/18 12:04:14)
+----------------------------------------------
+Line history
+--------------------------------
+Thread: 0x000039C4 [14-12:04:01.947](21) .\401A.cpp: 3077
+                   [14-12:04:01.947](22) .\401A.cpp: 3125
+                   [14-12:04:01.947](23) .\401A.cpp: 3144
+                   [14-12:04:01.947](24) .\401A.cpp: 3191
+                   [14-12:04:01.963](25) .\401A.cpp: 3253
+                   [14-12:04:07.751](51) .\Controller.cpp: 1409
+
+Thread: 0x000047B0 [14-12:04:08.824](53) .\Controller.cpp: 1159
+                   [14-12:04:08.824](54) .\Controller.cpp: 1166
+                   [14-12:04:14.298](77) .\GeometryThread.cpp: 244
+                   [14-12:04:14.298](78) .\GeometryThread.cpp: 244
+                   [14-12:04:14.298](79) .\GeometryThread.cpp: 272
+                   [14-12:04:14.298](80) .\GeometryThread.cpp: 1214
+                   [14-12:04:14.298](84) .\Controller.cpp: 8711
+                   [14-12:04:14.299](96) .\Controller.cpp: 8726
+                   [14-12:04:14.299](97) .\Controller.cpp: 8726
+                   [14-12:04:14.299](100) .\Controller.cpp: 8784
+                   [14-12:04:14.299](101) .\401A.cpp: 26053
+                   [14-12:04:14.299](102) .\Controller.cpp: 8796
+                   [14-12:04:14.299](104) .\Controller.cpp: 10262
+
+Thread: 0x0000268C [14-12:04:08.824](55) .\Controller.cpp: 1816
+                   [14-12:04:08.824](56) .\Controller.cpp: 1830
+                   [14-12:04:08.824](57) .\401A.cpp: 4283
+                   [14-12:04:08.824](58) .\401A.cpp: 4302
+                   [14-12:04:09.090](59) .\Controller.cpp: 1837
+                   [14-12:04:14.298](81) .\Controller.cpp: 10409
+                   [14-12:04:14.298](82) .\Controller.cpp: 13442
+                   [14-12:04:14.298](83) .\Controller.cpp: 13442
+                   [14-12:04:14.298](86) .\Controller.cpp: 10411
+
+Thread: 0x00001210 [14-12:04:14.298](85) .\Timing.cpp: 122
+                   [14-12:04:14.299](88) .\Timing.cpp: 124
+                   [14-12:04:14.299](89) .\Timing.cpp: 2648
+                   [14-12:04:14.299](90) .\Timing.cpp: 2562
+                   [14-12:04:14.299](91) .\Timing.cpp: 2571
+                   [14-12:04:14.299](92) .\Timing.cpp: 2571
+                   [14-12:04:14.299](93) .\Timing.cpp: 2574
+                   [14-12:04:14.299](94) .\Timing.cpp: 2574
+                   [14-12:04:14.299](99) .\Timing.cpp: 374
+
+
+Function calls
+----------------------------------
+
+Messages
+--------------------------------
+Channel: GUI
+--------------------------------
+[14-12:04:05.255](32) Point Name
+[14-12:04:05.289](48) Select Control Panel G-Code
+[14-12:04:07.587](50) Select Control Panel G-Code
+[14-12:04:08.777](52) Go Online
+[14-12:04:14.961](105) Program exited normally
+
+Channel: General
+--------------------------------
+[14-12:04:00.077](0) Software version 4.5.24
+[14-12:04:01.540](15) Setup File: R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #1\ML\MaestroLite 4\Setup\doub
+[14-12:04:01.540](16) Tooling File: R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #1\ML\MaestroLite 4\Tooling\
+
+Channel: Controller Activity
+--------------------------------
+[14-12:04:01.540](1) Setting user var
+[14-12:04:01.540](2) Setting done
+[14-12:04:01.540](3) Setting user var
+[14-12:04:01.540](4) Setting done
+[14-12:04:01.540](5) Setting user var
+[14-12:04:01.540](6) Setting done
+[14-12:04:01.540](7) Setting user var
+[14-12:04:01.540](8) Setting done
+[14-12:04:01.540](9) Setting user var
+[14-12:04:01.540](10) Setting done
+[14-12:04:01.540](11) Setting user var
+[14-12:04:01.540](12) Setting done
+[14-12:04:01.540](13) Setting user var
+[14-12:04:01.540](14) Setting done
+[14-12:04:01.728](19) Configuring the controller
+[14-12:04:01.947](20)   Configuring subclass
+[14-12:04:01.963](26)   Setting up idle timer
+[14-12:04:01.963](27)   Setting up updater
+[14-12:04:01.963](28)   Configuring camera?
+[14-12:04:01.963](29) Configuration complete
+[14-12:04:05.279](34) Getting user var
+[14-12:04:05.279](35) Getting done
+[14-12:04:05.279](36) Getting user var
+[14-12:04:05.279](37) Getting done
+[14-12:04:05.279](38) Getting user var
+[14-12:04:05.279](39) Getting done
+[14-12:04:05.279](40) Getting user var
+[14-12:04:05.279](41) Getting done
+[14-12:04:05.279](42) Getting user var
+[14-12:04:05.279](43) Getting done
+[14-12:04:05.279](44) Getting user var
+[14-12:04:05.279](45) Getting done
+[14-12:04:05.279](46) Getting user var
+[14-12:04:05.279](47) Getting done
+[14-12:04:14.286](63) Getting user var
+[14-12:04:14.286](64) Getting done
+[14-12:04:14.286](65) Getting user var
+[14-12:04:14.286](66) Getting done
+[14-12:04:14.286](67) Getting user var
+[14-12:04:14.286](68) Getting done
+[14-12:04:14.286](69) Getting user var
+[14-12:04:14.286](70) Getting done
+[14-12:04:14.286](71) Getting user var
+[14-12:04:14.286](72) Getting done
+[14-12:04:14.286](73) Getting user var
+[14-12:04:14.286](74) Getting done
+[14-12:04:14.286](75) Getting user var
+[14-12:04:14.286](76) Getting done
+
+Channel: Controller Error
+--------------------------------
+[14-12:04:14.299](98) Action not ready count = 0
+
+Channel: Controller Mode
+--------------------------------
+[14-12:04:14.299](103) SetMode() to 0
+
+Channel: Controller State
+--------------------------------
+[14-12:04:14.298](85) Modbus channel closed
+[14-12:04:14.299](95) Unload program
+
+Channel: 401A Time
+--------------------------------
+[14-12:04:11.875](62) 2.6500000
+
+Channel: Controller Time
+--------------------------------
+[14-12:04:11.875](61) 2.6500000
+
+Channel: User Messages
+--------------------------------
+[14-12:04:09.149](60) Error Code:  18003
+
+Channel: Camera
+--------------------------------
+[14-12:04:14.961](106) Shutting down camera
+[14-12:04:14.961](107) Stopping graph
+[14-12:04:14.961](108) Graph stopped
+[14-12:04:14.961](109) Disconnecting graph
+[14-12:04:14.961](110) Graph disconnected
+
+Channel: Cfg Change
+--------------------------------
+[14-12:04:01.728](17) Begin handling cfg changes
+[14-12:04:01.728](18) Prepare to call api configure
+[14-12:04:01.963](30) Api configure completed
+[14-12:04:01.978](31) Cfg menu rebuilt
+[14-12:04:05.279](33) Boxes configured
+[14-12:04:05.304](49) Done handling cfg changes
+
+
+======> Tracker report (03/14/18 12:04:14)
+----------------------------------------------
+Line history
+--------------------------------
+Thread: 0x000039C4 [14-12:04:01.947](21) .\401A.cpp: 3077
+                   [14-12:04:01.947](22) .\401A.cpp: 3125
+                   [14-12:04:01.947](23) .\401A.cpp: 3144
+                   [14-12:04:01.947](24) .\401A.cpp: 3191
+                   [14-12:04:01.963](25) .\401A.cpp: 3253
+                   [14-12:04:07.751](51) .\Controller.cpp: 1409
+
+Thread: 0x000047B0 [14-12:04:08.824](53) .\Controller.cpp: 1159
+                   [14-12:04:08.824](54) .\Controller.cpp: 1166
+                   [14-12:04:14.298](77) .\GeometryThread.cpp: 244
+                   [14-12:04:14.298](78) .\GeometryThread.cpp: 244
+                   [14-12:04:14.298](79) .\GeometryThread.cpp: 272
+                   [14-12:04:14.298](80) .\GeometryThread.cpp: 1214
+                   [14-12:04:14.298](84) .\Controller.cpp: 8711
+                   [14-12:04:14.299](96) .\Controller.cpp: 8726
+                   [14-12:04:14.299](97) .\Controller.cpp: 8726
+                   [14-12:04:14.299](100) .\Controller.cpp: 8784
+                   [14-12:04:14.299](101) .\401A.cpp: 26053
+                   [14-12:04:14.299](102) .\Controller.cpp: 8796
+                   [14-12:04:14.299](104) .\Controller.cpp: 10262
+
+Thread: 0x0000268C [14-12:04:08.824](55) .\Controller.cpp: 1816
+                   [14-12:04:08.824](56) .\Controller.cpp: 1830
+                   [14-12:04:08.824](57) .\401A.cpp: 4283
+                   [14-12:04:08.824](58) .\401A.cpp: 4302
+                   [14-12:04:09.090](59) .\Controller.cpp: 1837
+                   [14-12:04:14.298](81) .\Controller.cpp: 10409
+                   [14-12:04:14.298](82) .\Controller.cpp: 13442
+                   [14-12:04:14.298](83) .\Controller.cpp: 13442
+                   [14-12:04:14.298](86) .\Controller.cpp: 10411
+
+Thread: 0x00001210 [14-12:04:14.298](85) .\Timing.cpp: 122
+                   [14-12:04:14.299](88) .\Timing.cpp: 124
+                   [14-12:04:14.299](89) .\Timing.cpp: 2648
+                   [14-12:04:14.299](90) .\Timing.cpp: 2562
+                   [14-12:04:14.299](91) .\Timing.cpp: 2571
+                   [14-12:04:14.299](92) .\Timing.cpp: 2571
+                   [14-12:04:14.299](93) .\Timing.cpp: 2574
+                   [14-12:04:14.299](94) .\Timing.cpp: 2574
+                   [14-12:04:14.299](99) .\Timing.cpp: 374
+
+
+Function calls
+----------------------------------
+
+Messages
+--------------------------------
+Channel: GUI
+--------------------------------
+[14-12:04:05.255](32) Point Name
+[14-12:04:05.289](48) Select Control Panel G-Code
+[14-12:04:07.587](50) Select Control Panel G-Code
+[14-12:04:08.777](52) Go Online
+[14-12:04:14.961](105) Program exited normally
+
+Channel: General
+--------------------------------
+[14-12:04:00.077](0) Software version 4.5.24
+[14-12:04:01.540](15) Setup File: R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #1\ML\MaestroLite 4\Setup\doub
+[14-12:04:01.540](16) Tooling File: R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #1\ML\MaestroLite 4\Tooling\
+
+Channel: Controller Activity
+--------------------------------
+[14-12:04:01.540](1) Setting user var
+[14-12:04:01.540](2) Setting done
+[14-12:04:01.540](3) Setting user var
+[14-12:04:01.540](4) Setting done
+[14-12:04:01.540](5) Setting user var
+[14-12:04:01.540](6) Setting done
+[14-12:04:01.540](7) Setting user var
+[14-12:04:01.540](8) Setting done
+[14-12:04:01.540](9) Setting user var
+[14-12:04:01.540](10) Setting done
+[14-12:04:01.540](11) Setting user var
+[14-12:04:01.540](12) Setting done
+[14-12:04:01.540](13) Setting user var
+[14-12:04:01.540](14) Setting done
+[14-12:04:01.728](19) Configuring the controller
+[14-12:04:01.947](20)   Configuring subclass
+[14-12:04:01.963](26)   Setting up idle timer
+[14-12:04:01.963](27)   Setting up updater
+[14-12:04:01.963](28)   Configuring camera?
+[14-12:04:01.963](29) Configuration complete
+[14-12:04:05.279](34) Getting user var
+[14-12:04:05.279](35) Getting done
+[14-12:04:05.279](36) Getting user var
+[14-12:04:05.279](37) Getting done
+[14-12:04:05.279](38) Getting user var
+[14-12:04:05.279](39) Getting done
+[14-12:04:05.279](40) Getting user var
+[14-12:04:05.279](41) Getting done
+[14-12:04:05.279](42) Getting user var
+[14-12:04:05.279](43) Getting done
+[14-12:04:05.279](44) Getting user var
+[14-12:04:05.279](45) Getting done
+[14-12:04:05.279](46) Getting user var
+[14-12:04:05.279](47) Getting done
+[14-12:04:14.286](63) Getting user var
+[14-12:04:14.286](64) Getting done
+[14-12:04:14.286](65) Getting user var
+[14-12:04:14.286](66) Getting done
+[14-12:04:14.286](67) Getting user var
+[14-12:04:14.286](68) Getting done
+[14-12:04:14.286](69) Getting user var
+[14-12:04:14.286](70) Getting done
+[14-12:04:14.286](71) Getting user var
+[14-12:04:14.286](72) Getting done
+[14-12:04:14.286](73) Getting user var
+[14-12:04:14.286](74) Getting done
+[14-12:04:14.286](75) Getting user var
+[14-12:04:14.286](76) Getting done
+
+Channel: Controller Error
+--------------------------------
+[14-12:04:14.299](98) Action not ready count = 0
+
+Channel: Controller Mode
+--------------------------------
+[14-12:04:14.299](103) SetMode() to 0
+
+Channel: Controller State
+--------------------------------
+[14-12:04:14.298](85) Modbus channel closed
+[14-12:04:14.299](95) Unload program
+
+Channel: 401A Time
+--------------------------------
+[14-12:04:11.875](62) 2.6500000
+
+Channel: Controller Time
+--------------------------------
+[14-12:04:11.875](61) 2.6500000
+
+Channel: User Messages
+--------------------------------
+[14-12:04:09.149](60) Error Code:  18003
+
+Channel: Camera
+--------------------------------
+[14-12:04:14.961](106) Shutting down camera
+[14-12:04:14.961](107) Stopping graph
+[14-12:04:14.961](108) Graph stopped
+[14-12:04:14.961](109) Disconnecting graph
+[14-12:04:14.961](110) Graph disconnected
+
+Channel: Cfg Change
+--------------------------------
+[14-12:04:01.728](17) Begin handling cfg changes
+[14-12:04:01.728](18) Prepare to call api configure
+[14-12:04:01.963](30) Api configure completed
+[14-12:04:01.978](31) Cfg menu rebuilt
+[14-12:04:05.279](33) Boxes configured
+[14-12:04:05.304](49) Done handling cfg changes
+
+

@@ -1,7 +1,7 @@
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #1\SUBROUTINES\ODYSSEY1 SUBROUTINES.nc
+G52 X0 Y0 Z0  (Calibration Offsets)
 M98 PLOAD
 (Initialization Complete )
-G52 X0 Y0 Z0  (Calibration Offsets)
 
 
 ( ********************** MAIN G-CODE ***********************
@@ -10,6 +10,7 @@ G52 X0 Y0 Z0  (Calibration Offsets)
 (***********************************************************
 
 REAL #PART_THICKNESS
+REAL #BAR_HEIGHT
 REAL #ANGHYP
 REAL #VERTCHANGE
 REAL #PALLETWIDTH
@@ -55,7 +56,8 @@ REAL #ZCHANGE
 (***********************************************************
 
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************
-#PART_THICKNESS = 0
+#BAR_HEIGHT = 19
+#PART_THICKNESS = 10
 #CENTER = 180 (IN MM)
 (***********************************************************
 #FLUX_USED= "NO" 	        (ENTER "YES" OR "NO"
@@ -77,17 +79,17 @@ REAL #ZCHANGE
 
 (***********************************************************
 #SOLDER_HEIGHT= -60 + #PART_THICKNESS
+(#SOLDER_HEIGHT= -60 + #PART_THICKNESS + #BAR_HEIGHT
 #SPEED_ACROSS_WAVE= 600
 #SOLDER_POSITION = 1606
 (#ANGLE_OVER_WAVE= #ANGVAL
-#ANGLE_OVER_WAVE= 0
-#PALLETWIDTH= 110              	(CHANGING THE PALLET WIDTH TO LESS ALLOWS THE DRAG ANGLE TO BE INCREASED
+#ANGLE_OVER_WAVE= 5
+#PALLETWIDTH= 150             	(CHANGING THE PALLET WIDTH TO LESS ALLOWS THE DRAG ANGLE TO BE INCREASED
 (***********************************************************
 
 (*********************** CONSTANTS *************************)
 #RADIUS = 177.8 + 12.7 (12.7 ACCOUNTS FOR BAR)
 #PI = 3.1416
-#ANGLE_OVER_WAVE = 1
 #DPALLET = 254
 #AUTO_ANGLE = TRUE
 (*********************** END OF OPERATOR DATA INPUT ***************************
@@ -104,7 +106,7 @@ M98 PPREHEAT		(MOVE TO PREHEAT POSITION AND PREHEAT
 ENDIF
 
 M98 PPUMP1START
-M98 pSOLDERDIP	 	(MOVE TOOL HEAD TO SOLDER POT POSITION AND DIP
+M98 PSOLDERDIP	 	(MOVE TOOL HEAD TO SOLDER POT POSITION AND DIP
 
 M98 PSOLDERPUMPSTOP
 

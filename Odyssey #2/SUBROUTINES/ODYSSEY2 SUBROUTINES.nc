@@ -2,7 +2,8 @@
 OLOAD
 M98 PLIGHT_ALL_OFF 				(TURN LIGHTS OFF)
 G30 P2              			(NEAR HOME)
-G27                			 	(SEEK HOME)
+(G27                			 	(SEEK HOME)
+G28 							(SEEK HOME, REF.)
 G01 A0 F1080						
 M98 PLIGHT_GREEN_ON 			(TURN GREEN LIGHT ON)
 M99
@@ -41,7 +42,7 @@ M16 M34 S#PUMP1RPM          	(PUMP ON, N2 ON)
 M99
 (***********************************************************)
 OSOLDERDIP
-G01 A0 F1080
+(G01 A0 F1080
 G30 P6 							(GO TO SOLDER REFERENCE PT.)
 G01 A#ANGLE_OVER_WAVE F1080     (ROTATE HEAD TO PROCESS ANGLE)
 G01 Z#SOLDER_HEIGHT F4000       (MOVE TO Z HEIGHT FOR PROCESS)

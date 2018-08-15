@@ -209,7 +209,7 @@ m_bUseOnlyToolsInChanger=0
 [axis0]
 m_bUseAxis=1
 m_dBacklash=0.000000000000
-m_dAxisSize=1355.000000000000
+m_dAxisSize=2000.000000000000
 m_bSafeInterpolate=1
 m_bCovert=0
 m_bRightHanded=1
@@ -1123,7 +1123,7 @@ m_strDescription=SINGLE AXIS TOOL
 m_offGeom.0=0.000000000000
 m_offGeom.1=0.000000000000
 m_offGeom.2=0.000000000000
-m_offGeom.3=45.600000000000
+m_offGeom.3=44.500000000000
 m_offGeom.4=0.000000000000
 m_offGeom.5=0.000000000000
 [fixture5]
@@ -1131,7 +1131,7 @@ m_strDescription=ROTARY TOOL HOLDER
 m_offGeom.0=0.000000000000
 m_offGeom.1=0.000000000000
 m_offGeom.2=0.000000000000
-m_offGeom.3=45.600000000000
+m_offGeom.3=44.500000000000
 m_offGeom.4=0.000000000000
 m_offGeom.5=0.000000000000
 [fixture6]
@@ -1967,7 +1967,7 @@ m_bIsMach=1
 m_posPoint.0=570.000000000000
 m_posPoint.1=0.000000000000
 m_posPoint.2=0.000000000000
-m_posPoint.3=45.829800000000
+m_posPoint.3=44.500000000000
 m_posPoint.4=0.000000000000
 m_posPoint.5=0.000000000000
 [refpoint4]
@@ -1976,7 +1976,7 @@ m_bIsMach=1
 m_posPoint.0=807.000000000000
 m_posPoint.1=0.000000000000
 m_posPoint.2=0.000000000000
-m_posPoint.3=45.829800000000
+m_posPoint.3=44.500000000000
 m_posPoint.4=0.000000000000
 m_posPoint.5=0.000000000000
 [refpoint5]
@@ -1985,7 +1985,7 @@ m_bIsMach=1
 m_posPoint.0=1209.000000000000
 m_posPoint.1=0.000000000000
 m_posPoint.2=-5.000000000000
-m_posPoint.3=0.000000000000
+m_posPoint.3=44.500000000000
 m_posPoint.4=0.000000000000
 m_posPoint.5=0.000000000000
 [refpoint6]

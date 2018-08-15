@@ -1,7 +1,10 @@
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
-M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
-(Initialization Complete)
+
 G52 X0 Y0 Z0  (Calibration Offsets)
+M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
+G52 X0 Y0 Z0  (Calibration Offsets)
+(Initialization Complete)
+
 ( ********************** MAIN G-CODE ***********************)
 
 (DECLARE VARIABLES HERE
@@ -57,7 +60,7 @@ REAL #DRY_TIME
 
 (***********************************************************)
 #PALLETWIDTH= 145 (PALLET WIDTH IS NEGATIVE TO ACCOUNT FOR TRAVEL DIRECTION)
-#SOLDER_HEIGHT= -82 + #PART_THICKNESS (@PUMP = 650 RPM)
+#SOLDER_HEIGHT= -78 + #PART_THICKNESS (@PUMP = 650 RPM)
 #ANGLE_OVER_WAVE= 0
 (#SOLDER_POSITION= 1209 (CHANGED TO REFERENCE PT.) )
 (***********************************************************)

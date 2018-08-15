@@ -43,7 +43,7 @@ REAL #ANGLE_OVER_WAVE
 (*********************** CONSTANTS *************************)
 #RADIUS = 177.8 + 12.7 (12.7 ACCOUNTS FOR BAR)
 #PI = 3.1416
-#ANGLE_OVER_WAVE = 1
+#ANGLE_OVER_WAVE = 0
 #DPALLET = 254
 
 (************************** FLUX ***************************)
@@ -63,8 +63,9 @@ REAL #ANGLE_OVER_WAVE
 #SOLDER_HEIGHT= -70 + #PART_THICKNESS 
 
 (********************* MAIN PROGRAM ************************)
-M98 PLOAD (INITIALIZE AND HOME)
 G52 X0 Y0 Z0  (SET CALIBRATION OFFSETS)
+M98 PLOAD (INITIALIZE AND HOME)
+
 
 M98 PPARTLOAD
 

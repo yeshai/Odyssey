@@ -6,9 +6,10 @@
 ( ********************** SOLDER PUMP [RPM] = 500 ****************)
 (***********************************************************)
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
-M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
-(Initialization Complete)
 G52 X0 Y0 Z0  (Calibration Offsets)
+M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
+G52 X0 Y0 Z0  (Calibration Offsets)
+(Initialization Complete)
 ( ********************** MAIN G-CODE ***********************)
 
 (DECLARE VARIABLES HERE
@@ -51,7 +52,7 @@ REAL #DRY_TIME
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************)
 
 (***********************************************************)
-#FLUX_HEIGHT= -75.5 + #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
+#FLUX_HEIGHT= -77.0 + #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
 #FLUX_TIME= 0.5            (TIME IN FLUX)
 #FLUX_DRIP_TIME= 3     (TIME TO DRIP OFF FLUX)
 #FLUX_DRIP_ANGLE= 40    (ANGLE TO DRIP OFF FLUX)

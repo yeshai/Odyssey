@@ -1,0 +1,2 @@
+Copy all files to C:\ProgramData\Robotic Process Systems\MaestroLite 4
+Run watchChanges
