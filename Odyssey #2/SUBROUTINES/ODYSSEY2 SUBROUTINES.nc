@@ -16,6 +16,7 @@ M99
 (***********************************************************)
 OFLUX
 G30 P5 							(MOVE TO FLUX STATION)
+G01 A0 F20000     				(LEVEL HEAD, A=0)
 G01 Z-5 F20000               
 G01 Z#FLUX_HEIGHT+5 F4000
 G01 Z#FLUX_HEIGHT-#FLUX_DIP_DEPTH F#FLUX_DIP_SPEED_IN  (APPLY FLUX)
@@ -30,7 +31,8 @@ G01 Z-5   A0                    (RETURN TO PROCESS POSITION)
 M99
 (***********************************************************)
 OPREHEAT
-G30 P4							(MOVE TO PREHEAT STATION)       
+G30 P4							(MOVE TO PREHEAT STATION)  
+G01 A0 F20000     				(LEVEL HEAD, A=0)  
 G01 Z#PREHEAT_HEIGHT F4000      (LOWER HEAD)
 G04 P#PREHEAT_TIME              (WAIT AT PREHEAT)
 G01 Z-5                         (RETURN TO PROCESS POSITION)
@@ -42,8 +44,8 @@ M16 M34 S#PUMP1RPM          	(PUMP ON, N2 ON)
 M99
 (***********************************************************)
 OSOLDERDIP
-(G01 A0 F1080
 G30 P6 							(GO TO SOLDER REFERENCE PT.)
+G01 A0 F20000     				(LEVEL HEAD, A=0)
 G01 A#ANGLE_OVER_WAVE F1080     (ROTATE HEAD TO PROCESS ANGLE)
 G01 Z#SOLDER_HEIGHT F4000       (MOVE TO Z HEIGHT FOR PROCESS)
 (IF #ANGLE_OVER_WAVE != 0 THEN

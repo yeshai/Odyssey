@@ -18,7 +18,7 @@ OPARTLOAD
 G58
 G01 A0 F1080
 G01 X100  Z-5 F20000              (MOVE TO LOAD STATION, Z UP)
-M99
+M99 (END FUNCTION)
 (***********************************************************)
 OFLUXPUMPSTART
 M29                               (START FLUX PUMP)

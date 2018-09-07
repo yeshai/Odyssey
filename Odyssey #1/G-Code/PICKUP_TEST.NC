@@ -1,0 +1,57 @@
+REAL #XSTART
+REAL #PITCH
+REAL #ROWS
+REAL #ROW
+#XSTART = 49
+#PITCH = 42.3418 (1.667 INCHES)
+#ROW = 0
+#ROWS = 5 (COUNT STARTS AT 0)
+WHILE #ROW <= #ROWS DO
+
+(################### SETUP ###################)
+G59                 (SELECT 8UP TOOLING, OFFSETS)
+G28 		        (SEEK HOME, REF.)
+M43		        (OPEN BLOW OFF)
+G04 P0.5            (WAIT 0.5 SECONDS)
+M44                 (CLOSE BLOW OFF)
+M32                 (TURN VACUUM ON)
+
+
+
+(################### PICKUP ###################)
+
+G52 X0 Y0 Z0 B0     (REZERO ALL)
+G01 A0 F1080        (LEVEL HEAD)
+G01 X[#XSTART + [#ROW*#PITCH]] F5000       (MOVE X TO PICK UP PARTS)
+G01 Z-77 F500       (MOVE Z TO PICK UP PARTS)
+M28		    (TURN ON VACUUM SOLENOID, SUCTION)
+G04 P2.0            (WAIT 2 SECONDS)
+G01 Z-30 F500       (MOVE UP)
+
+G91                 (SWITCH TO RELAVTIVE COORDINATES)
+G01 X10
+G90                 (SWITCH TO ABSOLUTE COORDINATES)
+
+
+
+(################### RETURN PARTS ###################)
+
+G01 X[#XSTART + [#ROW*#PITCH]]  F20000
+G04 P0.5            (WAIT 0.5 SECONDS)
+G01 Z-77 F500       (PUT PARTS DOWN)
+M33                 (TURN VACUUM OFF)
+M29		        (TURN OFF VACUUM SOLENOID, SUCTION)
+M43                 (OPEN BLOW OFF)
+G01 Z-74          (MOVE UP SLIGHTLY)
+G04 P4.0            (WAIT 4.0 SECONDS)
+G01 Z-76            (MOVE DOWN SLIGHTLY)
+G91                 (SWITCH TO RELAVTIVE COORDINATES)
+G01 X-1				(SHEAR SLIGHTLY AS NEEDED)				
+G90                 (SWITCH TO ABSOLUTE COORDINATES)
+G01 Z-74            (MOVE UP SLIGHTLY)
+G04 P1.0            (WAIT 1.0 SECOND)
+M44                 (VACUUM BLOW OFF STOP)
+G01 Z-50 F2000      (MOVE UP)
+
+#ROW = #ROW +1
+ENDWHILE
