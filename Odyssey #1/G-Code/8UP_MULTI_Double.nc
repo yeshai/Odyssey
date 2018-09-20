@@ -34,15 +34,18 @@ M18 S#PUMP2RPM      (TURN SOLDER PUMP ON, PB-FREE
 G52 X0 Y0 Z0 A0 B0     (REZERO ALL)
 G01 A0 F1080        (LEVEL HEAD)
 G01 X[#XSTART + [#ROW*#PITCH]] F5000       (MOVE X TO PICK UP PARTS)
-G01 Z[#ZTOUCH] F500       (MOVE Z TO PICK UP PARTS)
 M28		    (TURN ON VACUUM SOLENOID, SUCTION)
-G04 P2.0            (WAIT 2 SECONDS)
+G01 Z[#ZTOUCH] F500       (MOVE Z TO PICK UP PARTS)
+
+G04 P3.5            (WAIT 3.5 SECONDS)
 G01 Z-30 F500       (MOVE UP)
+G01 A1 F500       (START LEVEL HEAD)
+G01 A0 F500       (END LEVEL HEAD)
 G91                 (SWITCH TO RELAVTIVE COORDINATES)
 G01 X10
 G90                 (SWITCH TO ABSOLUTE COORDINATES)
 
-(################### FLUX  ###################)
+(################### FLUX #1 ###################)
 
 G01 X693   F20000   (MOVE TO FLUX)
 G01 A60     F1080        (TILT) 
@@ -55,7 +58,7 @@ G04 P1.0	    (WAIT 1 SECOND, DRIP)
 G01 A0 F500        (SET ANGLE TO 0)
 (M40                 (TURN FLUX OFF)
 
-(################### PRE-HEAT ###################)
+(################### PRE-HEAT #1 ###################)
 
 G01 X635 F20000     (MOVE TO PREHEAT)
 G01 Z-55            (MOVE DOWN)
@@ -63,7 +66,7 @@ G04 P30.0           (WAIT 30 SECONDS)
 G01 Z-20            (MOVE UP)
 G04 P1.0            (WAIT 1 SECOND)
 
-(################### SOLDER ###################)
+(################### SOLDER #1 ###################)
 
 G01 X1873.5 F20000    (MOVE TO PB-FREE POT)
 G01 A45 	F1080	(TILT 45 DEGREES)
@@ -108,6 +111,73 @@ G01 Z-20            (MOVE UP)
 G01 A0       F1080
 (M19                 (TURN SOLDER PUMP OFF, PB-FREE)
 (M42                 (TURN N2 OFF, PB-FREE)
+
+(################### FLUX #2 ###################)
+
+G01 X693   F20000   (MOVE TO FLUX)
+G01 A60     F1080        (TILT) 
+G01 Z-85.0           (DIP IN FLUX) 
+G91                 (SWITCH TO RELAVTIVE COORDINATES)
+G01 B360 F20000     (SPIN 360 DEGREES)
+G90                 (SWITCH TO ABSOLUTE COORDINATES)
+G01 Z-20            (MOVE UP)
+G04 P1.0	    (WAIT 1 SECOND, DRIP)
+G01 A0 F500        (SET ANGLE TO 0)
+
+(################### PRE-HEAT #2 ###################)
+
+G01 X635 F20000     (MOVE TO PREHEAT)
+G01 Z-55            (MOVE DOWN)
+G04 P10.0           (WAIT 30 SECONDS)
+G01 Z-20            (MOVE UP)
+G04 P1.0            (WAIT 1 SECOND)
+
+(################### SOLDER #2 ###################)
+
+G01 X1873.5 F20000    (MOVE TO PB-FREE POT)
+G01 A45 	F1080	(TILT 45 DEGREES)
+G01 Z-32.75            (MOVE DOWN TOWARDS WAVE)
+G91                 (SWITCH TO RELAVTIVE COORDINATES)
+
+G01 Z-10  F600      (DIP INTO SOLDER)
+G04 P1.0            (WAIT 1.0 SECOND)
+G01 B5   F600	  (SPIN +5 DEGREES, B=5)
+G01 Z5 F300         (BACK OUT OF WAVE)
+G01 Z5 F20000       (BACK OUT OF WAVE)
+G01 B-5 F20000      (SPIN -5 DEGREES, B=0) 
+
+G01 B90             (SPIN TO TIN, SIDE 2)
+G01 Z-10  F600      (DIP INTO SOLDER)
+G04 P1.0            (WAIT 1.0 SECOND)
+G01 B5   F600	  (SPIN +5 DEGREES, B=95)
+G01 Z5 F300         (BACK OUT OF WAVE)
+G01 Z5 F20000       (BACK OUT OF WAVE)
+G01 B-5 F20000      (SPIN -5 DEGREES, B=90) 
+
+G01 B90             (SPIN TO TIN, SIDE 3)
+G01 Z-10  F600      (DIP INTO SOLDER)
+G04 P1.0            (WAIT 1.0 SECOND)
+G01 B5   F600	  (SPIN +5 DEGREES, B=185)
+G01 Z5 F300         (BACK OUT OF WAVE)
+G01 Z5 F20000       (BACK OUT OF WAVE)
+G01 B-5 F20000      (SPIN -5 DEGREES, B=180) 
+
+G01 B90             (SPIN TO TIN, SIDE 4)
+G01 Z-10  F600      (DIP INTO SOLDER)
+G04 P1.0            (WAIT 1.0 SECOND)
+G01 B5   F600	  (SPIN +5 DEGREES, B=275)
+G01 Z5 F300         (BACK OUT OF WAVE)
+G01 Z5 F20000       (BACK OUT OF WAVE)
+G01 B-5 F20000      (SPIN -5 DEGREES, B=270) 
+
+G01 B90 F20000      (SPIN +90 DEGREES, B=0)
+
+G90                 (SWITCH TO ABSOLUTE COORDINATES)
+G01 Z-20            (MOVE UP)
+G01 A0       F1080
+M19                 (TURN SOLDER PUMP OFF, PB-FREE)
+M42                 (TURN N2 OFF, PB-FREE)
+
 
 (###################### RINSE ######################)
 M26                 (TURN RINSE ON)
