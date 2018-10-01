@@ -1,0 +1,185 @@
+#C:\MaestroLite Data\MICROSS SUB UTILITIES ROTARY.nc
+(M98 PPUMP1START
+(M98 PLOAD
+(Initialization Complete )
+G52 X0 Y0 Z0  (Calibration Offsets)
+ 
+
+(**********************set variables************************
+REAL #r               (row count
+REAL #step            (row pitch
+REAL #start           (initial pocket
+REAL #n1              (ROW COUNTER
+REAL #pick
+REAL #pickz 
+REAL #d               (NUMBER OF DIPS
+REAL #s               (NUMBER OF SIDES
+REAL #ro              (ROLL OUT ANGLE
+REAL #dro             (ROLL OUT DIFFERENCE
+REAL #dd              (DIP DEPTH
+REAL #n2              (SIDE COUNTER
+REAL #n3              (DIP COUNTER
+REAL #Wt              (WASH TIME
+REAL #Ht              (HEAT TIME
+real #Dp              (diamond dip 1=yes, 0=no
+( ********************** MAIN G-CODE ***********************  
+
+#r = 5
+
+#step = 25.5
+#start = 147.717
+
+#n1 = 1
+
+#pickz = -79.0  (WAS 83.5
+
+WHILE #n1<#r+1 DO
+
+#pick = #start-[#n1-1]*#step
+
+(*********************************************************
+
+#d = 1
+
+#s = 4
+
+#ro = 6
+
+#dro = 360/#s-#ro
+
+#dd = 55.3
+
+#Ht = 30
+
+#Wt = 5
+
+#n2 = 1
+
+#n3 = 1
+
+#Dp = 0
+
+(**********************************************************
+
+G01 Z-5 F5000
+ 
+M98 PPARTLOADROTARY
+G01 X#pick F8000
+G01 Z#pickz F2000
+G04 P.5
+M28                           	(TURN VACUUM PICKUP ON)
+G01 Z-5 F6000                	(RETURN TO PROCESS POSITION)
+(M33                           	(RETURN TO PROCESS POSITION)
+
+G01 B#Dp*45
+
+
+WHILE #n3<#d+1 DO
+
+M98 PPARTFLUX1			(MOVE TO FLUX POSITION	
+M37
+
+(M98 PQFPDIPLEFTOFFSET		(OFFSET TOOL HEAD FOR RIGHT BANK
+(G01 Z-61			(MOVE TO PROCESS DEPTH
+(G91
+(G01 B360 F10000
+(G90
+(G01 Z-5
+
+M98 PQFPDIPRIGHTOFFSET		(OFFSET TOOL HEAD FOR RIGHT BANK
+G01 Z-62			(MOVE TO PROCESS DEPTH
+G91
+G01 B-360 F10000
+G90
+G01 Z-5
+                    
+M98 PPARTPREHEATROTARY 		(MOVE TO PREHEAT STATION	
+G01 Z-55      F6000
+(G04 P20
+G91
+G01 B720 F720*120/#Ht                             (PREHEAT ROTATE
+G04 P1
+G01 B-720 F720*120/#Ht                                 (PREHEAT DWELL
+G90
+G01 Z-5       F6000                      (RETURN TO PROCESS POSITION
+
+M16
+M34
+
+M98 PROTARYDSPWAVE_center_LEAD	(MOVE TO LEAD SOLDER POT
+
+G01 Z-60.
+
+WHILE #n2<#s+1 DO
+G91
+(G01 X#dd F1000			(INDEX TO WAVE PROCESS POSITION
+(G01 A0 F2880
+(G04 P2
+(G01 B#ro F2000
+(G01 X-#dd*.25 F300              (ROTATE OUT						
+(G01 X-#dd*.75 B-#ro F5000
+G01 X-#dd F1000			(INDEX TO WAVE PROCESS POSITION
+G01 A0 F2880
+G04 P2
+G01 B#ro F2000
+G01 X#dd*.25  F225	       (ROTATE OUT						
+G01 X#dd*.75 B#dro F5000
+(G01 B#dro F10000 
+G90
+#n2=#n2+1
+
+ENDWHILE
+
+M17
+M35
+
+G01 Z-5
+
+#n2=1
+
+#n3=#n3+1
+
+ENDWHILE
+
+
+M98 PPARTWASH			(MOVE TO WASH STATION
+M98 PQFPDIPRIGHTOFFSET		(OFFSET TOOL HEAD FOR RIGHT BANK
+G01 Z-60 F6000			(MOVE TO PROCESS DEPTH
+G92 B0
+G91 
+G01 B-1800 F15000
+G90                                                   
+G01 Z-5 F4000
+
+(M98 PPARTWASH			(MOVE TO WASH STATION
+(M98 PQFPDIPLEFTOFFSET		(OFFSET TOOL HEAD FOR RIGHT BANK
+(G01 Z-60 F6000			(MOVE TO PROCESS DEPTH
+(G92 B0
+(G91 
+(G01 B1800 F15000
+(G90                                                   
+(G01 Z-5 F4000
+
+(M98 PDRYON			(MOVE TO DRY STATION	
+(M98 PPARTDRY			(DRY PARTS
+(M98 PDRYOFF
+
+M98 PPARTUNLOAD			(MOVE TO UNLOAD STATION
+G01 X#pick
+G01 Z[#pickz] F6000
+M29
+G04 P1.0
+G91
+G01 X-5
+G90
+G01 Z-5 F6000 
+
+#n1=#n1+1
+
+ENDWHILE
+
+G01 X400
+
+G56
+M98 PUNLOAD
+

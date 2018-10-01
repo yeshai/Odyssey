@@ -1,0 +1,2 @@
+Angle of pallet must be at 10deg over wave solder nozzle
+2 dip requirement since it is a gold part.

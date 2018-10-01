@@ -1,0 +1,130 @@
+#C:\MaestroLite Data\MICROSS SUB UTILITIES ODYSSEY CREWE.nc
+(M98 PPUMP1START
+M98 PLOAD
+(Initialization Complete )
+G52 X0 Y0 Z0  (Calibration Offsets)
+ 
+ 
+( ********************** MAIN G-CODE *********************** 
+
+(DECLARE VARIABLES HERE
+(***********************************************************
+REAL #ANGHYP
+REAL #VERTCHANGE
+(***********************************************************
+STRING #FLUX_USED
+STRING #FLUX_POT_CHOICE
+REAL #FLUX_HEIGHT
+REAL #FLUX_DWELL
+REAL #FLUX_DRIP_DWELL
+REAL #FLUX_DRIP_ANGLE
+REAL #FLUX_DIP_SPEED_IN
+REAL #FLUX_DIP_SPEED_OUT
+REAL #FLUX_DIP_DEPTH
+(***********************************************************
+STRING #PREHEAT_USED
+REAL #PREHEAT_HEIGHT
+REAL #PREHEAT_DWELL
+(***********************************************************
+STRING #SOLDER_POT_CHOICE
+REAL #SOLDER_HEIGHT
+REAL #SPEED_ACROSS_WAVE
+REAL #ANGLE_OVER_WAVE
+INTEGER #NUMBER_OF_DIPS
+(***********************************************************
+STRING #WASH_TYPE
+STRING #wASH_USED
+REAL #WASH_HEIGHT
+REAL #NUMBER_OF_WASH_SHAKES
+REAL #WASH_DWELL
+REAL #WASH_DRIP_DWELL
+REAL #WASH_DRIP_ANGLE
+REAL #WASH_SPEED_IN
+REAL #WASH_SPEED_OUT
+(***********************************************************
+STRING #DRY_TYPE
+STRING #DRY_USED
+REAL #DRY_HEIGHT
+REAL #NUMBER_OF_DRY_SHAKES
+REAL #DRY_DWELL
+(***********************************************************
+
+(********************** OPERATOR ENTER PARAMETERS HERE ***********************
+
+(***********************************************************
+#FLUX_USED= "YES" 	        (ENTER "YES" OR "NO"
+#FLUX_POT_CHOICE= "FLUX1" 	(ENTER "FLUX1" OR "FLUX2" TO SELECT FLUX 1 OR FLUX 2
+#FLUX_HEIGHT= -71.    	(SET depth to just before leads touch the flux. bars touch at -71.9
+#FLUX_DWELL= 0.5
+#FLUX_DRIP_DWELL= 3
+#FLUX_DRIP_ANGLE= 30
+#FLUX_DIP_SPEED_IN= 2000
+#FLUX_DIP_SPEED_OUT= 6000
+#FLUX_DIP_DEPTH= 1.            (subtract body thickness)
+
+(***********************************************************
+#PREHEAT_USED= "YES" 	        (ENTER "YES" OR "NO"
+#PREHEAT_HEIGHT= -55
+#PREHEAT_DWELL= 30
+
+(***********************************************************
+#SOLDER_POT_CHOICE= "LEADDRAG"  (ENTER "LEADDRAG" OR "LEADFREEDRAG" TO SELECT LEADED SOLDER OR LEAD FREE SOLDER
+#SOLDER_HEIGHT= -61.          (Bars touch solder @ 62.2
+#SPEED_ACROSS_WAVE= 150
+#ANGLE_OVER_WAVE=0               (NUMBER OF DIPS
+#NUMBER_OF_DIPS=1
+(***********************************************************
+#wASH_USED= "YES"               (ENTER "YES" OR "NO"
+#WASH_TYPE= "WASHSHAKE"         (ENTER "WASH" OR "WASHSHAKE" TO SELECT STATIONARY OR SHAKING WASH
+#WASH_HEIGHT= -71.		(SET TO THE DEPTH YOU WANT TO SUBMERGE THE PART IN THE WASH
+#NUMBER_OF_WASH_SHAKES= 10      (IF SHAKE WASH SELECTED
+#WASH_DWELL= 5                 (IF STATIONARY WASH SELECTED
+#WASH_DRIP_DWELL= 3
+#WASH_DRIP_ANGLE= 10
+#WASH_SPEED_IN= 4000
+#WASH_SPEED_OUT= 6000
+
+(***********************************************************
+#DRY_USED= "NO"                 (ENTER "YES" OR "NO"
+#DRY_TYPE= "DRYSHAKE"           (ENTER "DRY" OR "DRYSHAKE" TO SELECT STATIONARY OR VERTICAL OSCILLATIONS
+#DRY_HEIGHT= -30		(SET THE HEIGHT THAT GIVES THE BEST COVERAGE FOR THE AIR KNIFE
+#NUMBER_OF_DRY_SHAKES= 5
+#DRY_DWELL= 10
+
+(***********************************************************
+ 
+(*********************** END OF OPERATOR DATA INPUT ***************************
+
+
+M98 PPARTLOAD
+G01 X100 Z-5 F4000                       (MOVE TOOL HEAD INTO LOAD POSITION)
+
+WHILE #NUMBER_OF_DIPS>0 DO	(PROCESSES STAGES BETWEEN WHILE AND ENDWHILE FOR NUMBER_OF_DIPS
+
+IF #FLUX_USED= "YES" THEN
+M98 P#FLUX_POT_CHOICE		(MOVE TOOL HEAD TO FLUX POSITION AND FLUX
+ENDIF
+
+M98 PPARTPREHEAT		(MOVE TO PREHEAT POSITION AND PREHEAT
+
+M98 P#SOLDER_POT_CHOICE		 (MOVE TOOL HEAD TO SOLDER POT POSITION AND DIP
+
+#NUMBER_OF_DIPS= #NUMBER_OF_DIPS-1
+
+ENDWHILE
+
+IF #wASH_USED= "YES" THEN
+M98 PPARTWASH				 (MOVE TO WASH STATION AND WASH
+ENDIF
+
+
+IF #DRY_USED= "YES" THEN
+M98 PPARTDRY				 (TURN ON AIR KNIFE FOR DRY ASSIST
+
+ENDIF
+
+M98 PPARTUNLOAD				 (MOVE TO UNLOAD POSITION
+
+G56
+M98 PUNLOAD
+M30.1

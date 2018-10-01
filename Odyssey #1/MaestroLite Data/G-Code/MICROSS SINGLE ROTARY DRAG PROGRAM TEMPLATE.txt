@@ -1,0 +1,46 @@
+#C:\MaestroLite Data\MICROSS SUB UTILITIES ODYSSEY.nc
+M98 PPUMPSTART
+M98 PLOAD
+(Initialization Complete )
+G52 X0 Y0 Z0  (Calibration Offsets)
+ 
+ 
+( ********************** MAIN G-CODE *********************** 
+ 
+M98 PPARTLOAD
+G01 X15 Z-25 F4000                       (MOVE TOOL HEAD INTO LOAD POSITION)
+
+M98 PPARTFLUX1				 (MOVE TOOL HEAD TO FLUX POSITION) 
+G01 Z-150 F4000                          (APPLY FLUX)
+G04 P2                                   (FLUX DWELL)
+G01 Z-25                                 (RETURN TO PROCESS POSITION)
+
+M98 PPARTPREHEAT
+G01 Z-100 F4000                          (MOVE TO PREHEAT POSITION)
+G04 P60                                  (PREHEAT DWELL)
+G01 Z-25                                 (RETURN TO PROCESS POSITION)
+
+M98 PPARTAPPLYALLOYLEADDRAG
+G01 Z-100 F4000                          (APPLY NEW ALLOY)
+G01 X800 F2000
+	                                 (SOLDER DWELL)
+G01 Z-25 F6000                           (RETURN TO PROCESS POSITION)
+
+(M98 PPARTWASH
+(G01 Z-150 F4000                          (WASH PART)
+(M98 PWASHSHAKE L10  
+(G01 Z-25 F4000                           (RETURN TO PROCESS POSITION)                         
+
+(M98 PDRYON
+(M98 PPARTDRY
+(G01 Z-100 F4000
+(G04 P5
+(G01 Z-25
+(M98 PDRYOFF
+
+M98 PPARTUNLOAD
+
+G56
+M98 PUNLOAD
+M30.1
+ 

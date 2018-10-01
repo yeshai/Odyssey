@@ -1,0 +1,76 @@
+#C:\MaestroLite Data\MICROSS SUB UTILITIES ODYSSEY.nc
+M98 PPUMP1START
+(M98 PLOAD
+(Initialization Complete )
+G52 X0 Y0 Z0  (Calibration Offsets)
+(*********************** SET VARIABLES*********************
+
+REAL #dd		(dip depth 
+REAL #sd		(side dip
+REAL #dt		(dwell time
+
+ 
+( ********************** MAIN G-CODE *********************** 
+
+
+#dd = 22
+#sd = 14
+#dt = 2
+
+M17
+ 
+M98 PPARTLOAD                           (MOVE GRIPPER INTO LOAD POSITION)
+G01 Z-5 F10000                          (Z DOWN FOR PART PICKUP)                           (CLOSE GRIPPER JAWS AND SECURE PARTS)
+G01 Z-5 F10000                          (RETURN TO PROCESS POSITION)
+
+(M98 PPARTFLUX1
+(G01 Z-79.2 F10000                          (APPLY FLUX)
+(G04 P2                                  (FLUX DWELL)
+(G01 Z-5                                 (RETURN TO PROCESS POSITION)
+
+M98 PPARTPREHEAT
+G01 Z-28 F10000                         (MOVE TO PREHEAT POSITION)
+G04 P20                                 (PREHEAT DWELL)
+G01 Z-5                                 (RETURN TO PROCESS POSITION)
+
+M16 M34
+
+M98 PPARTAPPLYALLOYLEAD
+G01 X1688.5 Z-20
+G91
+G01 Z-#dd F1000                          (APPLY NEW ALLOY)
+G01 X#sd F1000
+G04 P#dt                       
+G01 X15 Z15 F300
+G01 X-#sd F2000
+G01 X-15 Z-15 F1000
+
+G01 X-#sd F1000
+G04 P#dt                       
+G01 X-15 Z15 F300
+
+G90
+                              (SOLDER DWELL)
+G01 Z-5 F6000                           (RETURN TO PROCESS POSITION)
+
+M17 M35
+(M98 PWASHON
+(M98 PPARTWASH
+(G01 Z-5 F10000                          (WASH PART)
+(M98 PWASHSHAKE L10  
+(G01 Z-5 F10000                           (RETURN TO PROCESS POSITION)
+(M98 PWASHOFF                           
+
+(M98 PDRYON
+(M98 PPARTDRY
+(G01 Z-50 F10000
+(G04 P5
+(G01 Z-5
+(M98 PDRYOFF
+
+M98 PPARTUNLOAD 
+
+G56
+M98 PUNLOAD
+M30.1
+ 

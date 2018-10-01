@@ -60,7 +60,7 @@ REAL #DRY_TIME
 
 (***********************************************************)
 #PALLETWIDTH= 145 (PALLET WIDTH IS NEGATIVE TO ACCOUNT FOR TRAVEL DIRECTION)
-#SOLDER_HEIGHT= -78 + #PART_THICKNESS (@PUMP = 650 RPM)
+#SOLDER_HEIGHT= -80 + #PART_THICKNESS (@PUMP = 650 RPM)
 #ANGLE_OVER_WAVE= 0
 (#SOLDER_POSITION= 1209 (CHANGED TO REFERENCE PT.) )
 (***********************************************************)

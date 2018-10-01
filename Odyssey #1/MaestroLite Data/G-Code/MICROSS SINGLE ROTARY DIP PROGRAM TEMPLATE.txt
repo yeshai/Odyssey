@@ -1,0 +1,69 @@
+#C:\MaestroLite Data\MICROSS SUB UTILITIES ODYSSEY.nc
+M98 PPUMP1START
+(M98 PLOAD
+(Initialization Complete )
+G52 X0 Y0 Z0  (Calibration Offsets)
+ 
+ 
+( ********************** MAIN G-CODE *********************** 
+ 
+M98 PPARTLOAD                           (MOVE GRIPPER INTO LOAD POSITION)
+G01 Z-5 F10000                          (Z DOWN FOR PART PICKUP)                           (CLOSE GRIPPER JAWS AND SECURE PARTS)
+G01 Z-5 F10000                          (RETURN TO PROCESS POSITION)
+
+M98 PPARTFLUX1
+G01 Z-79.2 F10000                          (APPLY FLUX)
+G04 P2                                  (FLUX DWELL)
+G01 Z-5                                 (RETURN TO PROCESS POSITION)
+
+M98 PPARTPREHEAT
+G01 Z-50 F10000                         (MOVE TO PREHEAT POSITION)
+G04 P10                                 (PREHEAT DWELL)
+G01 Z-5                                 (RETURN TO PROCESS POSITION)
+
+(M98 PPARTREMOVEALLOY
+(G01 Z-86 F5000                          (STRIP EXISTING ALLOY)
+(G04 P3                                  (SOLDER DWELL) 
+(G01 Z-5 F6000                           (RETURN TO PROCESS POSITION)
+
+(M98 PPARTFLUX1
+(G01 Z-79.2 F10000                          (APPLY FLUX)
+(G04 P2                                  (FLUX DWELL)
+(G01 Z-5                                 (RETURN TO PROCESS POSITION)
+
+M98 PPARTAPPLYALLOYLEAD
+G01 Z-77. F1000                          (APPLY NEW ALLOY)
+G04 P2                                  (SOLDER DWELL)
+G01 Z-5 F6000                           (RETURN TO PROCESS POSITION)
+
+M98 PPARTFLUX1
+G01 Z-79. F10000                          (APPLY FLUX)
+G04 P2                                  (FLUX DWELL)
+G01 Z-5                                 (RETURN TO PROCESS POSITION)
+
+M98 PPARTAPPLYALLOYLEAD
+G01 Z-77. F1000                          (APPLY NEW ALLOY)
+G04 P2                                  (SOLDER DWELL)
+G01 Z-5 F6000                           (RETURN TO PROCESS POSITION)
+
+
+(M98 PWASHON
+(M98 PPARTWASH
+(G01 Z-5 F10000                          (WASH PART)
+(M98 PWASHSHAKE L10  
+(G01 Z-5 F10000                           (RETURN TO PROCESS POSITION)
+(M98 PWASHOFF                           
+
+(M98 PDRYON
+(M98 PPARTDRY
+(G01 Z-50 F10000
+(G04 P5
+(G01 Z-5
+(M98 PDRYOFF
+
+M98 PPARTUNLOAD 
+
+G56
+M98 PUNLOAD
+M30.1
+ 
