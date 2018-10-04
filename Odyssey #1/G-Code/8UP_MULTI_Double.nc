@@ -23,8 +23,8 @@ REAL #RINSE_Z
 (FOR 1 ROW, #ROWS = 0)
 (FOR 6 ROWS, #ROWS = 5)
 
-#XSTART = 50.4
-#ZTOUCH = -54.5
+#XSTART = 48.7
+#ZTOUCH = -55
 #PITCH = 42.3418 (1.667 INCHES)
 
 WHILE #ROW <= #ROWS DO 
@@ -200,7 +200,7 @@ M42                 (TURN N2 OFF, PB-FREE)
 (###################### RINSE ######################)
 
 #RINSE_X = 422		(RINSE_X @ A=0)
-#RINSE_Z = -53	(RINSE_Z @ A=0)
+#RINSE_Z = -54	(RINSE_Z @ A=0)
 
 M26                      (TURN RINSE ON)
 G01 X#RINSE_X  F20000    (MOVE TO RINSE)
