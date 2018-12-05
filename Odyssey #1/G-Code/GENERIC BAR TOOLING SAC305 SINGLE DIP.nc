@@ -58,14 +58,14 @@ REAL #DRY_DWELL
 #FLUX_DIP_DEPTH= 1
 
 (***********************************************************************************)
-#PREHEAT_USED= "YES" 	              (ENTER "YES" OR "NO")
+#PREHEAT_USED= "YES"(ENTER "YES" OR "NO")
 #PREHEAT_POSITION = 615
 #PREHEAT_HEIGHT= -90
 #PREHEAT_DWELL= 30
 
 (***********************************************************************************)
 #SOLDER_POT_CHOICE= "LEADFREEDRAG"  (LEAD-FREE SAC305 POT)
-#SOLDER_HEIGHT = -79.5 +1.50            (LEAD-FREE SOLDER POT NOZZLE HEIGHT, Z-POSITION)
+#SOLDER_HEIGHT = -83.5 +1.50            (LEAD-FREE SOLDER POT NOZZLE HEIGHT, Z-POSITION)
 #SPEED_OVER_WAVE= 400        (SPEED ACROSS LEAD-FREE SOLDER WAVE)
 #SOLDER_POSITION = 1930         (BAR EDGE ~= WAVE START)
 #ANGLE_OVER_WAVE = 0             (LEAD-FREE SOLDER POT X-POSITION)

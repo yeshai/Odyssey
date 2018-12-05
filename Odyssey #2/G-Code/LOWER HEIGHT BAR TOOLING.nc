@@ -52,7 +52,7 @@ REAL #DRY_TIME
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************)
 
 (***********************************************************)
-#FLUX_HEIGHT= -78.0 + #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
+#FLUX_HEIGHT= -.080 + #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
 #FLUX_TIME= 0.5            (TIME IN FLUX)
 #FLUX_DRIP_TIME= 3     (TIME TO DRIP OFF FLUX)
 #FLUX_DRIP_ANGLE= 40    (ANGLE TO DRIP OFF FLUX)
@@ -65,7 +65,7 @@ REAL #DRY_TIME
 
 (***********************************************************)
 #PALLETWIDTH= 145 (PALLET WIDTH IS NEGATIVE TO ACCOUNT FOR TRAVEL DIRECTION)
-#SOLDER_HEIGHT= -68.5 + #PART_THICKNESS (@PUMP = 550 RPM)
+#SOLDER_HEIGHT= -71.0 + #PART_THICKNESS (@PUMP = 550 RPM)
 #ANGLE_OVER_WAVE= 0
 (***********************************************************)
 #WASH_USED= "NO"                (ENTER "YES" OR "NO")
