@@ -56,8 +56,12 @@ G90                 (SWITCH TO ABSOLUTE COORDINATES)
 
 (################### FLUX #1 ###################)
 
-#FLUX_X = 694.5 (FLUX X @ A=60)
-#FLUX_Z = -85.4 (FLUX Z @ A=60)
+(#FLUX_X = 694.5 (FLUX X @ A=60)
+(#FLUX_Z = -85.4 (FLUX Z @ A=60)
+(UPDATED TO RELATIVE TO START)
+#FLUX_X = #XSTART + 648 (FLUX X @ A=60)
+#FLUX_Z = #ZTOUCH - 31.8
+
 
 G01 X#FLUX_X   F20000   (MOVE TO FLUX)
 G01 A60     F1080        (TILT) 
@@ -73,9 +77,11 @@ G01 A0 F500         (SET ANGLE TO 0)
 
 (################### PRE-HEAT #1 ###################)
 
-#PREHEAT_X = 635	(PRE-HEAT X @ A=0)
-#PREHEAT_Z = -51.5	(PRE-HEAT Z @ A=0)
-
+(#PREHEAT_X = 635	(PRE-HEAT X @ A=0)
+(#PREHEAT_Z = -51.5	(PRE-HEAT Z @ A=0)
+(UPDATED TO RELATIVE TO START)
+#PREHEAT_X = #XSTART + 588.5
+#PREHEAT_Z = #ZTOUCH + 2.1
 G01 X#PREHEAT_X F20000     (MOVE TO PREHEAT)
 G01 Z#PREHEAT_Z            (MOVE DOWN)
 G04 P30.0           	(WAIT 30 SECONDS)
@@ -84,8 +90,11 @@ G04 P1.0            	(WAIT 1 SECOND)
 
 (################### SOLDER #1 ###################)
 
-#SOLDER_X = 1569(SOLDER X @ A=45)
-#SOLDER_Z = -12.9	(SOLDER Z @ A=45, 10MM from WAVE)
+(#SOLDER_X = 1569(SOLDER X @ A=45)
+(#SOLDER_Z = -12.9	(SOLDER Z @ A=45, 10MM from WAVE)
+(UPDATED TO RELATIVE TO START)
+#SOLDER_X = #XSTART + 1522.5
+#SOLDER_Z = #ZTOUCH + 40.7
 
 G01 A45 	F1080		(TILT 45 DEGREES)
 G04 P1.0
@@ -137,8 +146,11 @@ M35                 (TURN N2 OFF, PB)
 
 (###################### RINSE ######################)
 
-#RINSE_X = 236		(RINSE_X @ A=60)
-#RINSE_Z = -89	(RINSE_Z @ A=60)
+(#RINSE_X = 236		(RINSE_X @ A=60)
+(#RINSE_Z = -89	(RINSE_Z @ A=60)
+(UPDATED TO RELATIVE TO START)
+#RINSE_X = #XSTART + 189.5
+#RINSE_Z = #ZTOUCH - 35.4
 
 M26                      (TURN RINSE ON)
 G01 X#RINSE_X  F20000    (MOVE TO RINSE)
