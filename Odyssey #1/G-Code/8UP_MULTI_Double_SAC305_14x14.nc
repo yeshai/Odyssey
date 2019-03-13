@@ -1,4 +1,3 @@
-(*** CYCLE TIME = 4:45 ***)
 REAL #PITCH
 REAL #ROWS
 REAL #ROW
@@ -23,9 +22,8 @@ REAL #RINSE_Z
 (FOR 1 ROW, #ROWS = 0)
 (FOR 6 ROWS, #ROWS = 5)
 
-#XSTART = 46.4
-#ZTOUCH = -58.5
-#ZTOUCH = #ZTOUCH + 4.1 (ADD PART & NOZZLE)
+#XSTART = 46.5
+#ZTOUCH = -54.3
 #PITCH = 42.3418 (1.667 INCHES)
 
 (WHILE #ROW <= #ROWS DO) 
@@ -58,8 +56,8 @@ G90                 (SWITCH TO ABSOLUTE COORDINATES)
 
 (################### FLUX #1 ###################)
 
-#FLUX_X = 693 (FLUX X @ A=60)
-#FLUX_Z = -88.0 (FLUX Z @ A=60)
+#FLUX_X = #XSTART + 646.5 (FLUX X @ A=60)
+#FLUX_Z = #ZTOUCH - 35.2(FLUX Z @ A=60)
 
 G01 X#FLUX_X   F20000   (MOVE TO FLUX)
 G01 A60     F1080        (TILT) 
@@ -75,8 +73,8 @@ G01 A0 F500         (SET ANGLE TO 0)
 
 (################### PRE-HEAT #1 ###################)
 
-#PREHEAT_X = 635	(PRE-HEAT X @ A=0)
-#PREHEAT_Z = -51.5	(PRE-HEAT Z @ A=0)
+#PREHEAT_X = #XSTART + 588.5	(PRE-HEAT X @ A=0)
+#PREHEAT_Z = #ZTOUCH + 1.8	(PRE-HEAT Z @ A=0)
 
 G01 X#PREHEAT_X F20000     (MOVE TO PREHEAT)
 G01 Z#PREHEAT_Z            (MOVE DOWN)
@@ -86,8 +84,8 @@ G04 P1.0            	(WAIT 1 SECOND)
 
 (################### SOLDER #1 ###################)
 
-#SOLDER_X = 1863.5(SOLDER X @ A=45)
-#SOLDER_Z = -36.0	(SOLDER Z @ A=45)
+#SOLDER_X = #XSTART + 1817  (SOLDER X @ A=45)
+#SOLDER_Z = #ZTOUCH + 17.0	(SOLDER Z @ A=45)
 
 G01 X#SOLDER_X F20000    (MOVE TO PB-FREE POT)
 G01 A45 	F1080		(TILT 45 DEGREES)
@@ -203,58 +201,24 @@ M42                 (TURN N2 OFF, PB-FREE)
 
 (###################### RINSE ######################)
 
-#RINSE_X = 422		(RINSE_X @ A=0)
-#RINSE_Z = -54	(RINSE_Z @ A=0)
+#RINSE_X = #XSTART + 200.5		(RINSE_X @ A=60)
+#RINSE_Z = #ZTOUCH -37.7		(RINSE_Z @ A=60)
 
 M26                      (TURN RINSE ON)
 G01 X#RINSE_X  F20000    (MOVE TO RINSE)
+G01 A60
 G01 Z#RINSE_Z            (MOVE DOWN)
 G91                      (SWITCH TO RELAVTIVE COORDINATES)
 G01 B360 F2000      (SPIN IN RINSE)
 G90                 (SWITCH TO ABSOLUTE COORDINATES)
-G01 Z-20            (MOVE UP)
-G91                 (SWITCH TO RELAVTIVE COORDINATES)
-G01 X-115 F20000
-G01 A45             (TILT TO DRIP)
-G01 B315 F2000      (SPIN 315 DEGREES)
-G01 A5 F2000             (SHAKE)
-G01 A-5 F2000             (SHAKE)
-G01 A10 F2000             (SHAKE)
-G01 A-10 F2000             (SHAKE)
-G04 P2.5            (WAIT 2.5 SECONDS)
-G01 A5 F2000             (SHAKE)
-G01 A-5 F2000             (SHAKE)
-G01 B45 F2000      (SPIN 45 DEGREES)
-G01 X230 F20000
-G01 A-90            (TILT TO DRIP)
-G01 B315 F2000      (SPIN IN RINSE)
-G01 A5 F2000             (SHAKE)
-G01 A-5 F2000             (SHAKE)
-G01 A10 F2000             (SHAKE)
-G01 A-10 F2000             (SHAKE)
-G04 P2.5            (WAIT 2.5 SECONDS)
-G01 A5 F2000             (SHAKE)
-G01 A-5 F2000             (SHAKE)
-G01 B45 F2000      (SPIN 45 DEGREES)
-G90                 (SWITCH TO ABSOLUTE COORDINATES)
+G01 Z0
 G01 A0   F1080      (LEVEL HEAD, A=0)
 M27                 (TURN RINSE OFF)
-
-(################### HEAT DRY ###################)
-
-G01 X#PREHEAT_X F20000     (MOVE TO PREHEAT)
-G01 Z#PREHEAT_Z             (MOVE DOWN)
-G04 P5.0           (WAIT 30 SECONDS)
-G01 Z-20            (MOVE UP)
-G04 P1.0            (WAIT 1 SECOND)
 
 (################### RETURN PARTS ###################)
 
 G01 X[#XSTART + [#ROW*#PITCH]+50]  F20000
 G01 X[#XSTART + [#ROW*#PITCH]]  F500
-(G91                 (SWITCH TO RELAVTIVE COORDINATES)
-(G01 B90 F2000      (SPIN 90 DEGREES)
-(G90                 (SWITCH TO ABSOLUTE COORDINATES)
 G04 P0.5            (WAIT 0.5 SECONDS)
 G01 Z[#ZTOUCH + 1.5] F500       (PUT PARTS DOWN)
 M33                 (TURN VACUUM OFF)
@@ -262,14 +226,14 @@ M29		        (TURN OFF VACUUM SOLENOID, SUCTION)
 M43                 (OPEN TO ATMOSPHERE)
 M44                 (CLOSE TO ATMOSPHERE)
 M24                 (TURN ON AIR KNIFE)
-G04 P2.5            (WAIT 0.5 SECONDS)
+G04 P3.5            (WAIT 3.5 SECONDS)
 M43                 (OPEN TO ATMOSPHERE)
-G01 Z[#ZTOUCH + 2.5] F500       (MOVE UP)
-G04 P1.5            (WAIT 3.5 SECONDS)
+G01 Z[#ZTOUCH + 2.0] F500       (MOVE UP)
+G04 P2.5            (WAIT 2.5 SECONDS)
 M25                 (TURN OFF AIR KNIFE)
 G04 P1.0            (WAIT 1.0 SECOND)
 M24                 (TURN ON AIR KNIFE)
-G01 Z[#ZTOUCH + 4.5] F500       (MOVE UP)
+G01 Z[#ZTOUCH + 3.0] F500       (MOVE UP)
 G04 P1.5            (WAIT 1.5 SECONDS)
 M25                 (TURN OFF AIR KNIFE)
 M43                 (OPEN TO ATMOSPHERE)
