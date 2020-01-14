@@ -37,7 +37,7 @@ m_abWarning.15=1
 m_bMsgAuxControlChange=0
 [uidisplay]
 m_iCoordDisplayMode=5
-m_bSimulate=1
+m_bSimulate=0
 m_bAutoZoom=1
 m_bShowDirection=0
 m_iUnits=1

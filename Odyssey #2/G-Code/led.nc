@@ -1,9 +1,9 @@
-( ********************** TYPICAL SETTINGS ***********************)
+( Part thickness 01.25000*TYPICAL SETTINGS ***********************)
 ( ********************** AUTOFLUX = True  ***********************)
 ( ********************** IR PREHEAT = True  *********************)
 ( ********************** PREHEAT TIME [s] = 60 ******************)
-( ********************** SOLDER SPEED [mm/min] = 500 **************)
-( ********************** SOLDER PUMP [RPM] = 500 ****************)
+( ********************** SOLDER SPEED [mm/min] = 550 **************)
+( ********************** SOLDER PUMP [RPM] = 525 ****************)
 (***********************************************************)
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
 G52 X0 Y0 Z0  (Calibration Offsets)
@@ -52,7 +52,7 @@ REAL #DRY_TIME
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************)
 
 (***********************************************************)
-#FLUX_HEIGHT= -74.0+ #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
+#FLUX_HEIGHT= -74.5+ #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
 #FLUX_TIME= 0.5            (TIME IN FLUX)
 #FLUX_DRIP_TIME= 3     (TIME TO DRIP OFF FLUX)
 #FLUX_DRIP_ANGLE= 40    (ANGLE TO DRIP OFF FLUX)

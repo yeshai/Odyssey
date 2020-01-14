@@ -1,14 +1,15 @@
-( ********************** TYPICAL SETTINGS ***********************)
+( ***PART THICKNESS 2.50 TYPICAL SETTINGS ***********************)
 ( ********************** AUTOFLUX = True  ***********************)
 ( ********************** IR PREHEAT = True  *********************)
 ( ********************** PREHEAT TIME [s] = 60 ******************)
-( ********************** SOLDER SPEED [mm/min] = 500 **************)
-( ********************** SOLDER PUMP [RPM] = 500 ****************)
+( ********************** SOLDER SPEED [mm/min] = 475 **************)
+( ********************** SOLDER PUMP [RPM] = 550 ****************)
 (***********************************************************)
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
-M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
-(Initialization Complete)
 G52 X0 Y0 Z0  (Calibration Offsets)
+M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
+G52 X0 Y0 Z0  (Calibration Offsets)
+(Initialization Complete)
 ( ********************** MAIN G-CODE ***********************)
 
 (DECLARE VARIABLES HERE
@@ -51,7 +52,7 @@ REAL #DRY_TIME
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************)
 
 (***********************************************************)
-#FLUX_HEIGHT= -75.5 + #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
+#FLUX_HEIGHT= -76.0+ #PART_THICKNESS	(LEAD TO JUST TOUCH FLUX)
 #FLUX_TIME= 0.5            (TIME IN FLUX)
 #FLUX_DRIP_TIME= 3     (TIME TO DRIP OFF FLUX)
 #FLUX_DRIP_ANGLE= 40    (ANGLE TO DRIP OFF FLUX)
@@ -63,10 +64,9 @@ REAL #DRY_TIME
 #PREHEAT_HEIGHT= -65 + #PART_THICKNESS
 
 (***********************************************************)
-#PALLETWIDTH= 150 (PALLET WIDTH IS NEGATIVE TO ACCOUNT FOR TRAVEL DIRECTION)
+#PALLETWIDTH= 149 (PALLET WIDTH IS NEGATIVE TO ACCOUNT FOR TRAVEL DIRECTION)
 #SOLDER_HEIGHT= -66.5 + #PART_THICKNESS (@PUMP = 550 RPM)
 #ANGLE_OVER_WAVE= 0
-(#SOLDER_POSITION= 1209 (CHANGED TO REFERENCE PT.) )
 (***********************************************************)
 #WASH_USED= "NO"                (ENTER "YES" OR "NO")
 #WASH_TYPE= "WASHSHAKE"         (ENTER "WASH" OR "WASHSHAKE")
@@ -93,31 +93,12 @@ M98 PPARTLOAD
 IF #FLUX_USED= TRUE THEN
 M98 PFLUX		(MOVE TOOL HEAD TO FLUX POSITION AND DIP)
 ENDIF
+M98 PPUMPSTART                 (START SOLDER PUMP)
 
 IF #PREHEAT_USED= TRUE THEN
 M98 PPREHEAT		(MOVE TO PREHEAT POSITION AND PREHEAT
 ENDIF
 
-M98 PPUMPSTART                 (START SOLDER PUMP)
-M98 PSOLDERDIP		 	(MOVE TOOL HEAD TO SOLDER POT POSITION AND DIP)
-
-IF #WASH_USED= "YES" THEN
-M98 PPARTWASH			(MOVE TO WASH STATION AND WASH)
-ENDIF
-
-IF #DRY_USED= "YES" THEN
-M98 PPARTDRY			(TURN ON AIR KNIFE FOR DRY ASSIST)
-ENDIF
-
-IF #FLUX_USED= TRUE THEN
-M98 PFLUX		(MOVE TOOL HEAD TO FLUX POSITION AND DIP)
-ENDIF
-
-IF #PREHEAT_USED= TRUE THEN
-M98 PPREHEAT		(MOVE TO PREHEAT POSITION AND PREHEAT
-ENDIF
-
-M98 PPUMPSTART                 (START SOLDER PUMP)
 M98 PSOLDERDIP		 	(MOVE TOOL HEAD TO SOLDER POT POSITION AND DIP)
 
 IF #WASH_USED= "YES" THEN

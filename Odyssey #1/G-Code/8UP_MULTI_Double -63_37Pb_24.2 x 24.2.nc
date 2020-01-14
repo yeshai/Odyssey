@@ -134,6 +134,87 @@ G01 A0       F1080
 M17                 (TURN SOLDER PUMP OFF, PB)
 M35                 (TURN N2 OFF, PB)
 
+(################### FLUX #2 ###################)
+
+#FLUX_X = 694.55 (FLUX X @ A=60)
+#FLUX_Z = -83(FLUX Z @ A=60,83)
+
+
+G01 X#FLUX_X   F20000   (MOVE TO FLUX)
+G01 A60     F1080        (TILT) 
+G01 Z#FLUX_Z           (DIP IN FLUX)
+G04 P0.5             (ENSURE DIP BEFORE SPIN)
+G91                 (SWITCH TO RELAVTIVE COORDINATES)
+G01 B360 F1000     (SPIN 360 DEGREES)
+G90                 (SWITCH TO ABSOLUTE COORDINATES)
+G01 Z-20            (MOVE UP)
+G04 P1.0	    	(WAIT 1 SECOND, DRIP)
+G01 A0 F500         (SET ANGLE TO 0)
+(M40                (TURN FLUX OFF)
+
+M34                 (TURN N2 ON, PB-FREE)
+M16 S#PUMP1RPM      (TURN SOLDER PUMP ON, PB-FREE)
+(################### PRE-HEAT #2 ###################)
+
+#PREHEAT_X = #XSTART + 588.5 (PRE-HEAT X @ A=0)
+#PREHEAT_Z = #ZTOUCH + 2.1 (PRE-HEAT Z @ A=0)
+G01 X#PREHEAT_X F20000     (MOVE TO PREHEAT)
+G01 Z#PREHEAT_Z            (MOVE DOWN)
+G04 P15.0           	(WAIT 15 SECONDS)
+G01 Z0            	(MOVE UP)
+G04 P1.0            	(WAIT 1 SECOND)
+
+(################### SOLDER #2 ###################)
+
+#SOLDER_X = 1567.99 (SOLDER X @ A=45)
+#SOLDER_Z = -9.75(SOLDER Z @ A=45)
+
+G01 A45 	F1080		(TILT 45 DEGREES)
+G04 P1.0
+G01 X#SOLDER_X F20000    (MOVE TO PB POT)
+G04 P1.0
+G01 Z#SOLDER_Z            (MOVE DOWN TOWARDS WAVE)
+G04 P1.0
+G91                 (SWITCH TO RELAVTIVE COORDINATES)
+
+G01 Z-10  F600      (DIP INTO SOLDER)
+G04 P2.0            (WAIT 3.0 SECONDS)
+(G01 B5   F400	  (SPIN +5 DEGREES, B=5)
+G01 Z5 F100         (BACK OUT OF WAVE)
+G01 Z5 F20000       (BACK OUT OF WAVE)
+(G01 B-5 F20000      (SPIN -5 DEGREES, B=0) 
+
+G01 B90             (SPIN TO TIN, SIDE 2)
+G01 Z-10  F600      (DIP INTO SOLDER)
+G04 P2.0            (WAIT 3.0 SECONDS)
+(G01 B5   F400	  (SPIN +5 DEGREES, B=95)
+G01 Z5 F100         (BACK OUT OF WAVE)
+G01 Z5 F20000       (BACK OUT OF WAVE)
+(G01 B-5 F20000      (SPIN -5 DEGREES, B=90) 
+
+G01 B90             (SPIN TO TIN, SIDE 3)
+G01 Z-10  F600      (DIP INTO SOLDER)
+G04 P2.0            (WAIT 3.0 SECONDS)
+(G01 B5   F400	  (SPIN +5 DEGREES, B=185)
+G01 Z5 F100         (BACK OUT OF WAVE)
+G01 Z5 F20000       (BACK OUT OF WAVE)
+(G01 B-5 F20000      (SPIN -5 DEGREES, B=180) 
+
+G01 B90             (SPIN TO TIN, SIDE 4)
+G01 Z-10  F600      (DIP INTO SOLDER)
+G04 P2.0            (WAIT 3.0 SECONDS)
+(G01 B5   F400	  (SPIN +5 DEGREES, B=275)
+G01 Z5 F100         (BACK OUT OF WAVE)
+G01 Z5 F20000       (BACK OUT OF WAVE)
+(G01 B-5 F20000      (SPIN -5 DEGREES, B=270) 
+
+G01 B90 F20000      (SPIN +90 DEGREES, B=0)
+
+G90                 (SWITCH TO ABSOLUTE COORDINATES)
+G01 Z0            (MOVE UP)
+G01 A0       F1080
+M17                 (TURN SOLDER PUMP OFF, PB)
+M35                 (TURN N2 OFF, PB)
 
 (###################### RINSE ######################)
 

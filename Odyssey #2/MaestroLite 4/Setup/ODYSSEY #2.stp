@@ -1123,7 +1123,7 @@ m_strDescription=SINGLE AXIS TOOL
 m_offGeom.0=0.000000000000
 m_offGeom.1=0.000000000000
 m_offGeom.2=0.000000000000
-m_offGeom.3=45.700000000000
+m_offGeom.3=45.650000000000
 m_offGeom.4=0.000000000000
 m_offGeom.5=0.000000000000
 [fixture5]
@@ -5204,7 +5204,7 @@ m_bIsEditable=1
 m_bDisplay=1
 m_bIsEditable=1
 [uservarusage6]
-m_bDisplay=1
+m_bDisplay=0
 m_bIsEditable=1
 [uservarusage7]
 m_bDisplay=0

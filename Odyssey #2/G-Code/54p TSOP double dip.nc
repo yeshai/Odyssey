@@ -1,9 +1,9 @@
-( ********************** TYPICAL SETTINGS ***********************)
+( PART THICKNESS 1.00*** TYPICAL SETTINGS ***********************)
 ( ********************** AUTOFLUX = True  ***********************)
 ( ********************** IR PREHEAT = True  *********************)
 ( ********************** PREHEAT TIME [s] = 60 ******************)
-( ********************** SOLDER SPEED [mm/min] = 500 **************)
-( ********************** SOLDER PUMP [RPM] = 500 ****************)
+( ********************** SOLDER SPEED [mm/min] = 400 **************)
+( ********************** SOLDER PUMP [RPM] = 560 ****************)
 (***********************************************************)
 #R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\SUBROUTINES\ODYSSEY2 SUBROUTINES.nc
 M98 PLOAD (Turn on dross wiper, airknife and lights. Then, HOME)
