@@ -52,7 +52,7 @@ REAL #DRY_DWELL
 (********************** OPERATOR ENTER PARAMETERS HERE ***********************
 
 (***********************************************************
-#FLUX_USED= "YES" 	        (ENTER "YES" OR "NO"
+#FLUX_USED= "NO" 	        (ENTER "YES" OR "NO"
 #FLUX_POT_CHOICE= "FLUX1" 	(ENTER "FLUX1" OR "FLUX2" TO SELECT FLUX 1 OR FLUX 2
 #FLUX_HEIGHT= -70.5    	(SET depth to just before leads touch the flux. bars touch at -71.9
 #FLUX_DWELL= 0.5

@@ -32,8 +32,8 @@ m_iControllerType=0
 m_iSgType=2
 m_i401AChip=11
 m_i501Rev=2
-m_iMcodeNumberOnStartMotion=14
-m_iMcodeNumberOnStopMotion=15
+m_iMcodeNumberOnStartMotion=-9999
+m_iMcodeNumberOnStopMotion=-9999
 m_dArcRadiusTolerance=0.250000000000
 m_bEnableSignalPowerup=0
 m_bEnableSignalDisconnect=1
@@ -55,7 +55,7 @@ m_iMcodeNumberBeginRampDown=-9999
 m_iMcodeNumberEndRampDown=-9999
 m_bRightHanded=1
 m_iMcodeNumberOnline=-9999
-m_iMcodeNumberOffline=10
+m_iMcodeNumberOffline=-9999
 m_dCentripetalAccelerationFactor=1.000000000000
 m_bUseAdvancedContouring=1
 m_iSplineResolution=0
@@ -759,9 +759,9 @@ m_iDirection=0
 m_dDebounceDistance=0.004000000000
 m_iSubAxis=-1
 [input15]
-m_strDescription=
+m_strDescription=Start G-Code
 m_bNormallyClosed=0
-m_iFunction=6
+m_iFunction=7
 m_iAxis=-1
 m_iDirection=0
 m_dDebounceDistance=0.004000000000
@@ -895,22 +895,22 @@ m_iDirection=0
 m_dDebounceDistance=0.004000000000
 m_iSubAxis=-1
 [output0]
-m_strDescription=Red Light
+m_strDescription=HEATER PWR
 m_strButtonText=
 m_iWarning=3
-m_bDisplayInOutputBox=0
+m_bDisplayInOutputBox=1
 m_bDisplayInAuxBox=1
 [output1]
-m_strDescription=Yellow Light
+m_strDescription=BLOWER PWR
 m_strButtonText=
 m_iWarning=3
-m_bDisplayInOutputBox=0
+m_bDisplayInOutputBox=1
 m_bDisplayInAuxBox=1
 [output2]
-m_strDescription=Green Light
+m_strDescription=HEATER IDLE
 m_strButtonText=
 m_iWarning=3
-m_bDisplayInOutputBox=0
+m_bDisplayInOutputBox=1
 m_bDisplayInAuxBox=1
 [output3]
 m_strDescription=DSP #1 Pump
@@ -1123,7 +1123,7 @@ m_strDescription=SIMPLE ROTARY TOOL
 m_offGeom.0=0.000000000000
 m_offGeom.1=0.000000000000
 m_offGeom.2=0.000000000000
-m_offGeom.3=44.400000000000
+m_offGeom.3=47.480000000000
 m_offGeom.4=0.000000000000
 m_offGeom.5=0.000000000000
 [fixture5]
@@ -1131,7 +1131,7 @@ m_strDescription=8-UP ROTARY TOOL
 m_offGeom.0=0.000000000000
 m_offGeom.1=0.000000000000
 m_offGeom.2=0.000000000000
-m_offGeom.3=47.900000000000
+m_offGeom.3=47.000000000000
 m_offGeom.4=0.000000000000
 m_offGeom.5=0.000000000000
 [fixture6]
@@ -2116,7 +2116,7 @@ m_posPoint.4=0.000000000000
 m_posPoint.5=0.000000000000
 [mcodeoutput0]
 m_iNumber=10
-m_strDescription=RED LIGHT ON
+m_strDescription=HEATER PWR ON
 m_dDelaySec=0.000000000000
 m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
@@ -2160,7 +2160,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput1]
 m_iNumber=11
-m_strDescription=RED LIGHT OFF
+m_strDescription=HEATER PWR OFF
 m_dDelaySec=0.000000000000
 m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
@@ -2204,7 +2204,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput2]
 m_iNumber=12
-m_strDescription=YELLOW LIGHT ON
+m_strDescription=BLOWER POWER ON
 m_dDelaySec=0.000000000000
 m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
@@ -2248,7 +2248,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput3]
 m_iNumber=13
-m_strDescription=YELLOW LIGHT OFF
+m_strDescription=BLOWER POWER OFF
 m_dDelaySec=0.000000000000
 m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
@@ -2292,7 +2292,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput4]
 m_iNumber=14
-m_strDescription=GREEN LIGHT ON
+m_strDescription=HEATER IDLE ON
 m_dDelaySec=0.000000000000
 m_bBeforeMove=1
 m_bDelayBeforeSetLines=0
@@ -2336,7 +2336,7 @@ m_bBeforeMove=0
 m_bDisplayInOutputBox=0
 [mcodeoutput5]
 m_iNumber=15
-m_strDescription=GREEN LIGHT OFF
+m_strDescription=HEATER IDLE OFF
 m_dDelaySec=0.000000000000
 m_bBeforeMove=1
 m_bDelayBeforeSetLines=0

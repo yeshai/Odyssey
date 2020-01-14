@@ -72,7 +72,7 @@ REAL #DRY_DWELL
 #FLUX_DIP_DEPTH= 1
 
 (***********************************************************
-#PREHEAT_USED= "YES" 	        (ENTER "YES" OR "NO"
+#PREHEAT_USED= "NO" 	        (ENTER "YES" OR "NO"
 #PREHEAT_HEIGHT= -70
 #PREHEAT_DWELL= 20
 
