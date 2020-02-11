@@ -1,0 +1,1132 @@
+======> Tracker report (03/16/18 10:53:01)
+----------------------------------------------
+Line history
+--------------------------------
+Thread: 0x00002704 [16-10:48:25.610](21) .\401A.cpp: 3077
+                   [16-10:48:25.610](22) .\401A.cpp: 3125
+                   [16-10:48:25.610](23) .\401A.cpp: 3144
+                   [16-10:48:25.610](24) .\401A.cpp: 3191
+                   [16-10:48:25.626](25) .\401A.cpp: 3253
+                   [16-10:48:27.900](49) .\ViewportBoxGL.cpp: 894
+                   [16-10:48:27.900](50) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:27.900](51) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.388](53) .\ViewportBoxGL.cpp: 894
+                   [16-10:48:28.388](54) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.388](55) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.614](56) .\ViewportBoxGL.cpp: 894
+                   [16-10:48:28.614](57) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.614](58) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.635](60) .\ViewportBoxGL.cpp: 753
+                   [16-10:48:28.635](61) .\ViewportBoxGL.cpp: 756
+                   [16-10:48:28.635](62) .\ViewportBoxGL.cpp: 756
+                   [16-10:48:28.635](63) .\ViewportBoxGL.cpp: 894
+                   [16-10:48:28.635](64) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.635](65) .\ViewportBoxGL.cpp: 897
+                   [16-10:49:31.111](79) .\ViewportBoxGL.cpp: 1549
+                   [16-10:49:31.111](80) .\ViewportBoxGL.cpp: 1564
+                   [16-10:49:55.099](637) .\ViewportBoxGL.cpp: 1579
+                   [16-10:49:55.099](638) .\ViewportBoxGL.cpp: 1582
+                   [16-10:49:55.162](642) .\TigerDlg.cpp: 13812
+                   [16-10:51:23.221](662) .\ViewportBoxGL.cpp: 1549
+                   [16-10:51:23.221](663) .\ViewportBoxGL.cpp: 1564
+                   [16-10:51:32.364](918) .\ViewportBoxGL.cpp: 1579
+                   [16-10:51:32.364](919) .\ViewportBoxGL.cpp: 1582
+                   [16-10:51:32.395](920) .\TigerDlg.cpp: 13812
+
+Thread: 0x00004634 [16-10:49:54.525](583) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.525](584) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:54.624](585) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.624](586) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:54.718](587) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.718](588) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:54.816](589) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.816](590) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:54.916](591) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.916](592) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:55.014](593) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:55.014](594) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:55.115](639) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:55.115](640) .\ViewportBoxGL.cpp: 1781
+                   [16-10:49:55.115](641) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.332](692) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.332](693) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.427](694) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.427](695) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.523](696) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.523](697) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.616](698) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.616](699) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.736](700) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.736](701) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.818](702) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.818](703) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.915](704) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.915](705) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.015](706) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.015](707) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.114](708) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.114](709) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.213](710) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.213](711) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.329](712) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.329](713) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.420](714) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.420](715) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.519](716) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.519](717) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.614](718) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.614](719) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.715](720) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.715](721) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.814](722) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.814](723) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.923](724) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.923](725) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.025](726) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.025](727) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.125](728) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.125](729) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.225](730) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.225](731) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.324](732) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.324](733) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.432](734) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.432](735) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.516](736) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.516](737) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.616](738) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.616](739) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.734](742) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.734](743) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.832](744) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.832](745) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.924](746) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.924](747) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.017](748) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.017](749) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.116](750) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.116](751) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.216](752) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.216](753) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.316](754) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.316](755) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.416](756) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.416](757) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.519](758) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.519](759) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.650](760) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.650](761) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.719](762) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.719](763) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.834](764) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.834](765) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.937](766) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.937](767) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.019](768) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.019](769) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.131](770) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.131](771) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.225](772) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.225](773) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.324](774) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.324](775) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.424](776) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.424](777) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.523](778) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.523](779) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.630](780) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.630](781) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.723](782) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.723](783) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.823](784) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.823](785) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.927](786) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.927](787) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.027](788) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.027](789) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.121](790) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.121](791) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.222](792) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.222](793) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.322](794) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.322](795) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.420](796) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.420](797) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.519](798) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.519](799) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.618](800) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.618](801) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.720](802) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.720](803) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.821](804) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.821](805) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.921](806) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.921](807) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.021](808) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.021](809) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.115](810) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.115](811) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.215](812) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.215](813) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.313](814) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.313](815) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.413](816) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.413](817) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.528](818) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.528](819) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.622](820) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.622](821) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.713](822) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.713](823) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.827](824) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.827](825) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.928](826) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.928](827) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.027](828) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.027](829) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.126](830) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.126](831) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.235](832) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.235](833) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.321](834) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.321](835) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.421](836) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.421](837) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.521](838) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.521](839) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.625](840) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.625](841) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.717](842) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.717](843) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.815](844) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.815](845) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.927](846) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.927](847) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.027](848) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.027](849) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.127](850) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.127](851) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.227](852) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.227](853) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.320](854) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.320](855) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.419](856) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.419](857) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.518](858) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.518](859) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.617](860) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.617](861) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.717](862) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.717](863) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.824](864) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.824](865) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.930](866) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.930](867) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.034](868) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.034](869) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.134](870) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.134](871) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.213](872) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.213](873) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.328](874) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.328](875) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.427](921) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.427](922) .\ViewportBoxGL.cpp: 1781
+                   [16-10:51:32.427](923) .\ViewportBoxGL.cpp: 1138
+
+Thread: 0x00004E20 [16-10:53:00.534](956) .\GeometryThread.cpp: 244
+                   [16-10:53:00.534](957) .\GeometryThread.cpp: 244
+                   [16-10:53:00.534](958) .\GeometryThread.cpp: 272
+                   [16-10:53:00.534](959) .\GeometryThread.cpp: 1214
+                   [16-10:53:00.534](963) .\Controller.cpp: 8711
+                   [16-10:53:00.534](969) .\Controller.cpp: 8726
+                   [16-10:53:00.534](971) .\Controller.cpp: 8726
+                   [16-10:53:00.534](977) .\Controller.cpp: 8784
+                   [16-10:53:00.534](978) .\401A.cpp: 26053
+                   [16-10:53:00.534](979) .\Controller.cpp: 8796
+                   [16-10:53:00.534](982) .\Controller.cpp: 10262
+
+Thread: 0x00003260 [16-10:53:00.534](957) .\Controller.cpp: 10409
+                   [16-10:53:00.534](961) .\Controller.cpp: 13442
+                   [16-10:53:00.534](962) .\Controller.cpp: 13442
+                   [16-10:53:00.534](965) .\Controller.cpp: 10411
+
+Thread: 0x00002D44 [16-10:53:00.534](966) .\Timing.cpp: 122
+                   [16-10:53:00.534](967) .\Timing.cpp: 124
+                   [16-10:53:00.534](969) .\Timing.cpp: 2648
+                   [16-10:53:00.534](971) .\Timing.cpp: 2562
+                   [16-10:53:00.534](973) .\Timing.cpp: 2571
+                   [16-10:53:00.534](974) .\Timing.cpp: 2571
+                   [16-10:53:00.534](975) .\Timing.cpp: 2574
+                   [16-10:53:00.534](976) .\Timing.cpp: 2574
+                   [16-10:53:00.534](982) .\Timing.cpp: 374
+
+
+Function calls
+----------------------------------
+
+Messages
+--------------------------------
+Channel: GUI
+--------------------------------
+[16-10:48:27.065](32) Point Name
+[16-10:48:27.096](48) Select Control Panel G-Code
+[16-10:48:28.614](59) Select Control Panel G-Code
+[16-10:49:31.042](78) Edit User Variables
+[16-10:51:23.184](661) Edit User Variables
+[16-10:53:01.349](984) Program exited normally
+
+Channel: General
+--------------------------------
+[16-10:48:23.803](0) Software version 4.5.24
+[16-10:48:25.217](15) Setup File: R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\MaestroLite 4\Setup\ODYSSEY
+[16-10:48:25.217](16) Tooling File: R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\MaestroLite 4\Tooling\Mae
+
+Channel: Controller Activity
+--------------------------------
+[16-10:48:25.217](1) Setting user var
+[16-10:48:25.217](2) Setting done
+[16-10:48:25.217](3) Setting user var
+[16-10:48:25.217](4) Setting done
+[16-10:48:25.217](5) Setting user var
+[16-10:48:25.217](6) Setting done
+[16-10:48:25.217](7) Setting user var
+[16-10:48:25.217](8) Setting done
+[16-10:48:25.217](9) Setting user var
+[16-10:48:25.217](10) Setting done
+[16-10:48:25.217](11) Setting user var
+[16-10:48:25.217](12) Setting done
+[16-10:48:25.217](13) Setting user var
+[16-10:48:25.217](14) Setting done
+[16-10:48:25.394](19) Configuring the controller
+[16-10:48:25.610](20)   Configuring subclass
+[16-10:48:25.626](26)   Setting up idle timer
+[16-10:48:25.626](27)   Setting up updater
+[16-10:48:25.626](28)   Configuring camera?
+[16-10:48:25.626](29) Configuration complete
+[16-10:48:27.096](34) Getting user var
+[16-10:48:27.096](35) Getting done
+[16-10:48:27.096](36) Getting user var
+[16-10:48:27.096](37) Getting done
+[16-10:48:27.096](38) Getting user var
+[16-10:48:27.096](39) Getting done
+[16-10:48:27.096](40) Getting user var
+[16-10:48:27.096](41) Getting done
+[16-10:48:27.096](42) Getting user var
+[16-10:48:27.096](43) Getting done
+[16-10:48:27.096](44) Getting user var
+[16-10:48:27.096](45) Getting done
+[16-10:48:27.096](46) Getting user var
+[16-10:48:27.096](47) Getting done
+[16-10:49:31.153](85) Getting user var
+[16-10:49:31.153](86) Getting done
+[16-10:49:31.153](87) Getting user var
+[16-10:49:31.153](88) Getting done
+[16-10:49:31.153](89) Getting user var
+[16-10:49:31.153](90) Getting done
+[16-10:49:31.153](91) Getting user var
+[16-10:49:31.153](92) Getting done
+[16-10:49:31.153](93) Getting user var
+[16-10:49:31.153](94) Getting done
+[16-10:49:31.153](95) Getting user var
+[16-10:49:31.153](96) Getting done
+[16-10:49:31.153](97) Getting user var
+[16-10:49:31.153](98) Getting done
+[16-10:49:31.153](99) Getting user var
+[16-10:49:31.153](100) Getting done
+[16-10:49:31.153](101) Getting user var
+[16-10:49:31.153](102) Getting done
+[16-10:49:31.153](103) Getting user var
+[16-10:49:31.153](104) Getting done
+[16-10:49:31.153](105) Getting user var
+[16-10:49:31.153](106) Getting done
+[16-10:49:31.153](107) Getting user var
+[16-10:49:31.153](108) Getting done
+[16-10:49:31.153](109) Getting user var
+[16-10:49:31.153](110) Getting done
+[16-10:49:31.153](111) Getting user var
+[16-10:49:31.153](112) Getting done
+[16-10:49:55.080](595) Setting user var
+[16-10:49:55.080](596) Setting done
+[16-10:49:55.080](597) Setting user var
+[16-10:49:55.080](598) Setting done
+[16-10:49:55.080](599) Setting user var
+[16-10:49:55.080](600) Setting done
+[16-10:49:55.080](601) Setting user var
+[16-10:49:55.080](602) Setting done
+[16-10:49:55.080](603) Setting user var
+[16-10:49:55.080](604) Setting done
+[16-10:49:55.080](605) Setting user var
+[16-10:49:55.080](606) Setting done
+[16-10:49:55.080](607) Setting user var
+[16-10:49:55.080](608) Setting done
+[16-10:49:55.080](609) Getting user var
+[16-10:49:55.080](610) Getting done
+[16-10:49:55.080](611) Getting user var
+[16-10:49:55.080](612) Getting done
+[16-10:49:55.080](613) Getting user var
+[16-10:49:55.080](614) Getting done
+[16-10:49:55.080](615) Getting user var
+[16-10:49:55.080](616) Getting done
+[16-10:49:55.080](617) Getting user var
+[16-10:49:55.080](618) Getting done
+[16-10:49:55.080](619) Getting user var
+[16-10:49:55.080](620) Getting done
+[16-10:49:55.080](621) Getting user var
+[16-10:49:55.080](622) Getting done
+[16-10:49:55.081](623) Getting user var
+[16-10:49:55.081](624) Getting done
+[16-10:49:55.081](625) Getting user var
+[16-10:49:55.081](626) Getting done
+[16-10:49:55.081](627) Getting user var
+[16-10:49:55.081](628) Getting done
+[16-10:49:55.081](629) Getting user var
+[16-10:49:55.081](630) Getting done
+[16-10:49:55.081](631) Getting user var
+[16-10:49:55.081](632) Getting done
+[16-10:49:55.081](633) Getting user var
+[16-10:49:55.081](634) Getting done
+[16-10:49:55.081](635) Getting user var
+[16-10:49:55.081](636) Getting done
+[16-10:51:23.294](664) Getting user var
+[16-10:51:23.294](665) Getting done
+[16-10:51:23.294](666) Getting user var
+[16-10:51:23.294](667) Getting done
+[16-10:51:23.294](668) Getting user var
+[16-10:51:23.294](669) Getting done
+[16-10:51:23.294](670) Getting user var
+[16-10:51:23.294](671) Getting done
+[16-10:51:23.294](672) Getting user var
+[16-10:51:23.294](673) Getting done
+[16-10:51:23.294](674) Getting user var
+[16-10:51:23.294](675) Getting done
+[16-10:51:23.294](676) Getting user var
+[16-10:51:23.294](677) Getting done
+[16-10:51:23.294](678) Getting user var
+[16-10:51:23.294](679) Getting done
+[16-10:51:23.294](680) Getting user var
+[16-10:51:23.294](681) Getting done
+[16-10:51:23.294](682) Getting user var
+[16-10:51:23.294](683) Getting done
+[16-10:51:23.294](684) Getting user var
+[16-10:51:23.294](685) Getting done
+[16-10:51:23.294](686) Getting user var
+[16-10:51:23.294](687) Getting done
+[16-10:51:23.294](688) Getting user var
+[16-10:51:23.294](689) Getting done
+[16-10:51:23.294](690) Getting user var
+[16-10:51:23.294](691) Getting done
+[16-10:51:32.349](876) Setting user var
+[16-10:51:32.349](877) Setting done
+[16-10:51:32.349](878) Setting user var
+[16-10:51:32.349](879) Setting done
+[16-10:51:32.349](880) Setting user var
+[16-10:51:32.349](881) Setting done
+[16-10:51:32.349](882) Setting user var
+[16-10:51:32.349](883) Setting done
+[16-10:51:32.349](884) Setting user var
+[16-10:51:32.349](885) Setting done
+[16-10:51:32.349](886) Setting user var
+[16-10:51:32.349](887) Setting done
+[16-10:51:32.349](888) Setting user var
+[16-10:51:32.349](889) Setting done
+[16-10:51:32.349](890) Getting user var
+[16-10:51:32.349](891) Getting done
+[16-10:51:32.349](892) Getting user var
+[16-10:51:32.349](893) Getting done
+[16-10:51:32.349](894) Getting user var
+[16-10:51:32.349](895) Getting done
+[16-10:51:32.349](896) Getting user var
+[16-10:51:32.349](897) Getting done
+[16-10:51:32.349](898) Getting user var
+[16-10:51:32.349](899) Getting done
+[16-10:51:32.349](900) Getting user var
+[16-10:51:32.349](901) Getting done
+[16-10:51:32.349](902) Getting user var
+[16-10:51:32.349](903) Getting done
+[16-10:51:32.349](904) Getting user var
+[16-10:51:32.349](905) Getting done
+[16-10:51:32.349](906) Getting user var
+[16-10:51:32.349](907) Getting done
+[16-10:51:32.349](908) Getting user var
+[16-10:51:32.349](909) Getting done
+[16-10:51:32.349](910) Getting user var
+[16-10:51:32.349](911) Getting done
+[16-10:51:32.349](912) Getting user var
+[16-10:51:32.349](913) Getting done
+[16-10:51:32.349](914) Getting user var
+[16-10:51:32.349](915) Getting done
+[16-10:51:32.349](916) Getting user var
+[16-10:51:32.349](917) Getting done
+[16-10:53:00.503](942) Getting user var
+[16-10:53:00.503](943) Getting done
+[16-10:53:00.503](944) Getting user var
+[16-10:53:00.503](945) Getting done
+[16-10:53:00.503](946) Getting user var
+[16-10:53:00.503](947) Getting done
+[16-10:53:00.503](948) Getting user var
+[16-10:53:00.503](949) Getting done
+[16-10:53:00.503](950) Getting user var
+[16-10:53:00.503](951) Getting done
+[16-10:53:00.503](952) Getting user var
+[16-10:53:00.503](953) Getting done
+[16-10:53:00.503](954) Getting user var
+[16-10:53:00.503](955) Getting done
+
+Channel: Controller Error
+--------------------------------
+[16-10:53:00.534](980) Action not ready count = 0
+
+Channel: Controller Mode
+--------------------------------
+[16-10:53:00.534](980) SetMode() to 0
+
+Channel: Controller State
+--------------------------------
+[16-10:53:00.534](964) Modbus channel closed
+[16-10:53:00.534](967) Unload program
+
+Channel: 401A Time
+--------------------------------
+[16-10:48:35.631](67) 0.0000000
+[16-10:48:45.636](69) 0.0000000
+[16-10:48:55.627](71) 0.0000000
+[16-10:49:05.639](73) 0.0000000
+[16-10:49:15.639](75) 0.0000000
+[16-10:49:25.633](77) 0.0000000
+[16-10:49:35.629](202) 0.0000000
+[16-10:49:45.638](406) 0.0000000
+[16-10:49:55.640](644) 0.0000000
+[16-10:50:05.633](646) 0.0000000
+[16-10:50:15.630](648) 0.0000000
+[16-10:50:25.633](650) 0.0000000
+[16-10:50:35.627](652) 0.0000000
+[16-10:50:45.641](654) 0.0000000
+[16-10:50:55.637](656) 0.0000000
+[16-10:51:05.638](658) 0.0000000
+[16-10:51:15.633](660) 0.0000000
+[16-10:51:25.632](741) 0.0000000
+[16-10:51:35.641](925) 0.0000000
+[16-10:51:45.633](927) 0.0000000
+[16-10:51:55.647](929) 0.0000000
+[16-10:52:05.641](931) 0.0000000
+[16-10:52:15.640](933) 0.0000000
+[16-10:52:25.640](935) 0.0000000
+[16-10:52:35.637](937) 0.0000000
+[16-10:52:45.641](939) 0.0000000
+[16-10:52:55.640](941) 0.0000000
+
+Channel: Controller Time
+--------------------------------
+[16-10:48:35.631](66) 0.0000000
+[16-10:48:45.636](68) 0.0000000
+[16-10:48:55.627](70) 0.0000000
+[16-10:49:05.639](72) 0.0000000
+[16-10:49:15.639](74) 0.0000000
+[16-10:49:25.633](76) 0.0000000
+[16-10:49:35.629](201) 0.0000000
+[16-10:49:45.638](405) 0.0000000
+[16-10:49:55.640](643) 0.0000000
+[16-10:50:05.633](645) 0.0000000
+[16-10:50:15.630](647) 0.0000000
+[16-10:50:25.633](649) 0.0000000
+[16-10:50:35.627](651) 0.0000000
+[16-10:50:45.641](653) 0.0000000
+[16-10:50:55.637](655) 0.0000000
+[16-10:51:05.638](657) 0.0000000
+[16-10:51:15.633](659) 0.0000000
+[16-10:51:25.632](740) 0.0000000
+[16-10:51:35.641](924) 0.0000000
+[16-10:51:45.633](926) 0.0000000
+[16-10:51:55.647](928) 0.0000000
+[16-10:52:05.641](930) 0.0000000
+[16-10:52:15.640](932) 0.0000000
+[16-10:52:25.640](934) 0.0000000
+[16-10:52:35.637](936) 0.0000000
+[16-10:52:45.641](938) 0.0000000
+[16-10:52:55.640](940) 0.0000000
+
+Channel: Camera
+--------------------------------
+[16-10:53:01.349](985) Shutting down camera
+[16-10:53:01.349](986) Stopping graph
+[16-10:53:01.349](987) Graph stopped
+[16-10:53:01.349](988) Disconnecting graph
+[16-10:53:01.349](989) Graph disconnected
+
+Channel: Cfg Change
+--------------------------------
+[16-10:48:25.394](17) Begin handling cfg changes
+[16-10:48:25.394](18) Prepare to call api configure
+[16-10:48:25.626](30) Api configure completed
+[16-10:48:25.642](31) Cfg menu rebuilt
+[16-10:48:27.096](33) Boxes configured
+[16-10:48:27.900](52) Done handling cfg changes
+
+
+======> Tracker report (03/16/18 10:53:01)
+----------------------------------------------
+Line history
+--------------------------------
+Thread: 0x00002704 [16-10:48:25.610](21) .\401A.cpp: 3077
+                   [16-10:48:25.610](22) .\401A.cpp: 3125
+                   [16-10:48:25.610](23) .\401A.cpp: 3144
+                   [16-10:48:25.610](24) .\401A.cpp: 3191
+                   [16-10:48:25.626](25) .\401A.cpp: 3253
+                   [16-10:48:27.900](49) .\ViewportBoxGL.cpp: 894
+                   [16-10:48:27.900](50) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:27.900](51) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.388](53) .\ViewportBoxGL.cpp: 894
+                   [16-10:48:28.388](54) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.388](55) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.614](56) .\ViewportBoxGL.cpp: 894
+                   [16-10:48:28.614](57) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.614](58) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.635](60) .\ViewportBoxGL.cpp: 753
+                   [16-10:48:28.635](61) .\ViewportBoxGL.cpp: 756
+                   [16-10:48:28.635](62) .\ViewportBoxGL.cpp: 756
+                   [16-10:48:28.635](63) .\ViewportBoxGL.cpp: 894
+                   [16-10:48:28.635](64) .\ViewportBoxGL.cpp: 897
+                   [16-10:48:28.635](65) .\ViewportBoxGL.cpp: 897
+                   [16-10:49:31.111](79) .\ViewportBoxGL.cpp: 1549
+                   [16-10:49:31.111](80) .\ViewportBoxGL.cpp: 1564
+                   [16-10:49:55.099](637) .\ViewportBoxGL.cpp: 1579
+                   [16-10:49:55.099](638) .\ViewportBoxGL.cpp: 1582
+                   [16-10:49:55.162](642) .\TigerDlg.cpp: 13812
+                   [16-10:51:23.221](662) .\ViewportBoxGL.cpp: 1549
+                   [16-10:51:23.221](663) .\ViewportBoxGL.cpp: 1564
+                   [16-10:51:32.364](918) .\ViewportBoxGL.cpp: 1579
+                   [16-10:51:32.364](919) .\ViewportBoxGL.cpp: 1582
+                   [16-10:51:32.395](920) .\TigerDlg.cpp: 13812
+
+Thread: 0x00004634 [16-10:49:54.525](583) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.525](584) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:54.624](585) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.624](586) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:54.718](587) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.718](588) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:54.816](589) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.816](590) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:54.916](591) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:54.916](592) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:55.014](593) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:55.014](594) .\ViewportBoxGL.cpp: 1138
+                   [16-10:49:55.115](639) .\ViewportBoxGL.cpp: 1778
+                   [16-10:49:55.115](640) .\ViewportBoxGL.cpp: 1781
+                   [16-10:49:55.115](641) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.332](692) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.332](693) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.427](694) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.427](695) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.523](696) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.523](697) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.616](698) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.616](699) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.736](700) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.736](701) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.818](702) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.818](703) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:23.915](704) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:23.915](705) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.015](706) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.015](707) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.114](708) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.114](709) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.213](710) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.213](711) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.329](712) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.329](713) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.420](714) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.420](715) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.519](716) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.519](717) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.614](718) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.614](719) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.715](720) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.715](721) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.814](722) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.814](723) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:24.923](724) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:24.923](725) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.025](726) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.025](727) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.125](728) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.125](729) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.225](730) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.225](731) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.324](732) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.324](733) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.432](734) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.432](735) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.516](736) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.516](737) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.616](738) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.616](739) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.734](742) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.734](743) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.832](744) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.832](745) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:25.924](746) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:25.924](747) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.017](748) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.017](749) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.116](750) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.116](751) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.216](752) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.216](753) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.316](754) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.316](755) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.416](756) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.416](757) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.519](758) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.519](759) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.650](760) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.650](761) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.719](762) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.719](763) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.834](764) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.834](765) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:26.937](766) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:26.937](767) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.019](768) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.019](769) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.131](770) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.131](771) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.225](772) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.225](773) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.324](774) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.324](775) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.424](776) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.424](777) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.523](778) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.523](779) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.630](780) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.630](781) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.723](782) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.723](783) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.823](784) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.823](785) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:27.927](786) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:27.927](787) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.027](788) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.027](789) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.121](790) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.121](791) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.222](792) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.222](793) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.322](794) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.322](795) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.420](796) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.420](797) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.519](798) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.519](799) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.618](800) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.618](801) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.720](802) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.720](803) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.821](804) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.821](805) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:28.921](806) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:28.921](807) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.021](808) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.021](809) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.115](810) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.115](811) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.215](812) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.215](813) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.313](814) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.313](815) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.413](816) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.413](817) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.528](818) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.528](819) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.622](820) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.622](821) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.713](822) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.713](823) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.827](824) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.827](825) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:29.928](826) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:29.928](827) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.027](828) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.027](829) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.126](830) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.126](831) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.235](832) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.235](833) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.321](834) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.321](835) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.421](836) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.421](837) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.521](838) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.521](839) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.625](840) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.625](841) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.717](842) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.717](843) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.815](844) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.815](845) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:30.927](846) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:30.927](847) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.027](848) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.027](849) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.127](850) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.127](851) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.227](852) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.227](853) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.320](854) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.320](855) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.419](856) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.419](857) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.518](858) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.518](859) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.617](860) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.617](861) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.717](862) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.717](863) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.824](864) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.824](865) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:31.930](866) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:31.930](867) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.034](868) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.034](869) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.134](870) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.134](871) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.213](872) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.213](873) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.328](874) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.328](875) .\ViewportBoxGL.cpp: 1138
+                   [16-10:51:32.427](921) .\ViewportBoxGL.cpp: 1778
+                   [16-10:51:32.427](922) .\ViewportBoxGL.cpp: 1781
+                   [16-10:51:32.427](923) .\ViewportBoxGL.cpp: 1138
+
+Thread: 0x00004E20 [16-10:53:00.534](956) .\GeometryThread.cpp: 244
+                   [16-10:53:00.534](957) .\GeometryThread.cpp: 244
+                   [16-10:53:00.534](958) .\GeometryThread.cpp: 272
+                   [16-10:53:00.534](959) .\GeometryThread.cpp: 1214
+                   [16-10:53:00.534](963) .\Controller.cpp: 8711
+                   [16-10:53:00.534](969) .\Controller.cpp: 8726
+                   [16-10:53:00.534](971) .\Controller.cpp: 8726
+                   [16-10:53:00.534](977) .\Controller.cpp: 8784
+                   [16-10:53:00.534](978) .\401A.cpp: 26053
+                   [16-10:53:00.534](979) .\Controller.cpp: 8796
+                   [16-10:53:00.534](982) .\Controller.cpp: 10262
+
+Thread: 0x00003260 [16-10:53:00.534](957) .\Controller.cpp: 10409
+                   [16-10:53:00.534](961) .\Controller.cpp: 13442
+                   [16-10:53:00.534](962) .\Controller.cpp: 13442
+                   [16-10:53:00.534](965) .\Controller.cpp: 10411
+
+Thread: 0x00002D44 [16-10:53:00.534](966) .\Timing.cpp: 122
+                   [16-10:53:00.534](967) .\Timing.cpp: 124
+                   [16-10:53:00.534](969) .\Timing.cpp: 2648
+                   [16-10:53:00.534](971) .\Timing.cpp: 2562
+                   [16-10:53:00.534](973) .\Timing.cpp: 2571
+                   [16-10:53:00.534](974) .\Timing.cpp: 2571
+                   [16-10:53:00.534](975) .\Timing.cpp: 2574
+                   [16-10:53:00.534](976) .\Timing.cpp: 2574
+                   [16-10:53:00.534](982) .\Timing.cpp: 374
+
+
+Function calls
+----------------------------------
+
+Messages
+--------------------------------
+Channel: GUI
+--------------------------------
+[16-10:48:27.065](32) Point Name
+[16-10:48:27.096](48) Select Control Panel G-Code
+[16-10:48:28.614](59) Select Control Panel G-Code
+[16-10:49:31.042](78) Edit User Variables
+[16-10:51:23.184](661) Edit User Variables
+[16-10:53:01.349](984) Program exited normally
+
+Channel: General
+--------------------------------
+[16-10:48:23.803](0) Software version 4.5.24
+[16-10:48:25.217](15) Setup File: R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\MaestroLite 4\Setup\ODYSSEY
+[16-10:48:25.217](16) Tooling File: R:\Manufacturing\Robotic Solder\Odyssey Programs\Odyssey #2\MaestroLite 4\Tooling\Mae
+
+Channel: Controller Activity
+--------------------------------
+[16-10:48:25.217](1) Setting user var
+[16-10:48:25.217](2) Setting done
+[16-10:48:25.217](3) Setting user var
+[16-10:48:25.217](4) Setting done
+[16-10:48:25.217](5) Setting user var
+[16-10:48:25.217](6) Setting done
+[16-10:48:25.217](7) Setting user var
+[16-10:48:25.217](8) Setting done
+[16-10:48:25.217](9) Setting user var
+[16-10:48:25.217](10) Setting done
+[16-10:48:25.217](11) Setting user var
+[16-10:48:25.217](12) Setting done
+[16-10:48:25.217](13) Setting user var
+[16-10:48:25.217](14) Setting done
+[16-10:48:25.394](19) Configuring the controller
+[16-10:48:25.610](20)   Configuring subclass
+[16-10:48:25.626](26)   Setting up idle timer
+[16-10:48:25.626](27)   Setting up updater
+[16-10:48:25.626](28)   Configuring camera?
+[16-10:48:25.626](29) Configuration complete
+[16-10:48:27.096](34) Getting user var
+[16-10:48:27.096](35) Getting done
+[16-10:48:27.096](36) Getting user var
+[16-10:48:27.096](37) Getting done
+[16-10:48:27.096](38) Getting user var
+[16-10:48:27.096](39) Getting done
+[16-10:48:27.096](40) Getting user var
+[16-10:48:27.096](41) Getting done
+[16-10:48:27.096](42) Getting user var
+[16-10:48:27.096](43) Getting done
+[16-10:48:27.096](44) Getting user var
+[16-10:48:27.096](45) Getting done
+[16-10:48:27.096](46) Getting user var
+[16-10:48:27.096](47) Getting done
+[16-10:49:31.153](85) Getting user var
+[16-10:49:31.153](86) Getting done
+[16-10:49:31.153](87) Getting user var
+[16-10:49:31.153](88) Getting done
+[16-10:49:31.153](89) Getting user var
+[16-10:49:31.153](90) Getting done
+[16-10:49:31.153](91) Getting user var
+[16-10:49:31.153](92) Getting done
+[16-10:49:31.153](93) Getting user var
+[16-10:49:31.153](94) Getting done
+[16-10:49:31.153](95) Getting user var
+[16-10:49:31.153](96) Getting done
+[16-10:49:31.153](97) Getting user var
+[16-10:49:31.153](98) Getting done
+[16-10:49:31.153](99) Getting user var
+[16-10:49:31.153](100) Getting done
+[16-10:49:31.153](101) Getting user var
+[16-10:49:31.153](102) Getting done
+[16-10:49:31.153](103) Getting user var
+[16-10:49:31.153](104) Getting done
+[16-10:49:31.153](105) Getting user var
+[16-10:49:31.153](106) Getting done
+[16-10:49:31.153](107) Getting user var
+[16-10:49:31.153](108) Getting done
+[16-10:49:31.153](109) Getting user var
+[16-10:49:31.153](110) Getting done
+[16-10:49:31.153](111) Getting user var
+[16-10:49:31.153](112) Getting done
+[16-10:49:55.080](595) Setting user var
+[16-10:49:55.080](596) Setting done
+[16-10:49:55.080](597) Setting user var
+[16-10:49:55.080](598) Setting done
+[16-10:49:55.080](599) Setting user var
+[16-10:49:55.080](600) Setting done
+[16-10:49:55.080](601) Setting user var
+[16-10:49:55.080](602) Setting done
+[16-10:49:55.080](603) Setting user var
+[16-10:49:55.080](604) Setting done
+[16-10:49:55.080](605) Setting user var
+[16-10:49:55.080](606) Setting done
+[16-10:49:55.080](607) Setting user var
+[16-10:49:55.080](608) Setting done
+[16-10:49:55.080](609) Getting user var
+[16-10:49:55.080](610) Getting done
+[16-10:49:55.080](611) Getting user var
+[16-10:49:55.080](612) Getting done
+[16-10:49:55.080](613) Getting user var
+[16-10:49:55.080](614) Getting done
+[16-10:49:55.080](615) Getting user var
+[16-10:49:55.080](616) Getting done
+[16-10:49:55.080](617) Getting user var
+[16-10:49:55.080](618) Getting done
+[16-10:49:55.080](619) Getting user var
+[16-10:49:55.080](620) Getting done
+[16-10:49:55.080](621) Getting user var
+[16-10:49:55.080](622) Getting done
+[16-10:49:55.081](623) Getting user var
+[16-10:49:55.081](624) Getting done
+[16-10:49:55.081](625) Getting user var
+[16-10:49:55.081](626) Getting done
+[16-10:49:55.081](627) Getting user var
+[16-10:49:55.081](628) Getting done
+[16-10:49:55.081](629) Getting user var
+[16-10:49:55.081](630) Getting done
+[16-10:49:55.081](631) Getting user var
+[16-10:49:55.081](632) Getting done
+[16-10:49:55.081](633) Getting user var
+[16-10:49:55.081](634) Getting done
+[16-10:49:55.081](635) Getting user var
+[16-10:49:55.081](636) Getting done
+[16-10:51:23.294](664) Getting user var
+[16-10:51:23.294](665) Getting done
+[16-10:51:23.294](666) Getting user var
+[16-10:51:23.294](667) Getting done
+[16-10:51:23.294](668) Getting user var
+[16-10:51:23.294](669) Getting done
+[16-10:51:23.294](670) Getting user var
+[16-10:51:23.294](671) Getting done
+[16-10:51:23.294](672) Getting user var
+[16-10:51:23.294](673) Getting done
+[16-10:51:23.294](674) Getting user var
+[16-10:51:23.294](675) Getting done
+[16-10:51:23.294](676) Getting user var
+[16-10:51:23.294](677) Getting done
+[16-10:51:23.294](678) Getting user var
+[16-10:51:23.294](679) Getting done
+[16-10:51:23.294](680) Getting user var
+[16-10:51:23.294](681) Getting done
+[16-10:51:23.294](682) Getting user var
+[16-10:51:23.294](683) Getting done
+[16-10:51:23.294](684) Getting user var
+[16-10:51:23.294](685) Getting done
+[16-10:51:23.294](686) Getting user var
+[16-10:51:23.294](687) Getting done
+[16-10:51:23.294](688) Getting user var
+[16-10:51:23.294](689) Getting done
+[16-10:51:23.294](690) Getting user var
+[16-10:51:23.294](691) Getting done
+[16-10:51:32.349](876) Setting user var
+[16-10:51:32.349](877) Setting done
+[16-10:51:32.349](878) Setting user var
+[16-10:51:32.349](879) Setting done
+[16-10:51:32.349](880) Setting user var
+[16-10:51:32.349](881) Setting done
+[16-10:51:32.349](882) Setting user var
+[16-10:51:32.349](883) Setting done
+[16-10:51:32.349](884) Setting user var
+[16-10:51:32.349](885) Setting done
+[16-10:51:32.349](886) Setting user var
+[16-10:51:32.349](887) Setting done
+[16-10:51:32.349](888) Setting user var
+[16-10:51:32.349](889) Setting done
+[16-10:51:32.349](890) Getting user var
+[16-10:51:32.349](891) Getting done
+[16-10:51:32.349](892) Getting user var
+[16-10:51:32.349](893) Getting done
+[16-10:51:32.349](894) Getting user var
+[16-10:51:32.349](895) Getting done
+[16-10:51:32.349](896) Getting user var
+[16-10:51:32.349](897) Getting done
+[16-10:51:32.349](898) Getting user var
+[16-10:51:32.349](899) Getting done
+[16-10:51:32.349](900) Getting user var
+[16-10:51:32.349](901) Getting done
+[16-10:51:32.349](902) Getting user var
+[16-10:51:32.349](903) Getting done
+[16-10:51:32.349](904) Getting user var
+[16-10:51:32.349](905) Getting done
+[16-10:51:32.349](906) Getting user var
+[16-10:51:32.349](907) Getting done
+[16-10:51:32.349](908) Getting user var
+[16-10:51:32.349](909) Getting done
+[16-10:51:32.349](910) Getting user var
+[16-10:51:32.349](911) Getting done
+[16-10:51:32.349](912) Getting user var
+[16-10:51:32.349](913) Getting done
+[16-10:51:32.349](914) Getting user var
+[16-10:51:32.349](915) Getting done
+[16-10:51:32.349](916) Getting user var
+[16-10:51:32.349](917) Getting done
+[16-10:53:00.503](942) Getting user var
+[16-10:53:00.503](943) Getting done
+[16-10:53:00.503](944) Getting user var
+[16-10:53:00.503](945) Getting done
+[16-10:53:00.503](946) Getting user var
+[16-10:53:00.503](947) Getting done
+[16-10:53:00.503](948) Getting user var
+[16-10:53:00.503](949) Getting done
+[16-10:53:00.503](950) Getting user var
+[16-10:53:00.503](951) Getting done
+[16-10:53:00.503](952) Getting user var
+[16-10:53:00.503](953) Getting done
+[16-10:53:00.503](954) Getting user var
+[16-10:53:00.503](955) Getting done
+
+Channel: Controller Error
+--------------------------------
+[16-10:53:00.534](980) Action not ready count = 0
+
+Channel: Controller Mode
+--------------------------------
+[16-10:53:00.534](980) SetMode() to 0
+
+Channel: Controller State
+--------------------------------
+[16-10:53:00.534](964) Modbus channel closed
+[16-10:53:00.534](967) Unload program
+
+Channel: 401A Time
+--------------------------------
+[16-10:48:35.631](67) 0.0000000
+[16-10:48:45.636](69) 0.0000000
+[16-10:48:55.627](71) 0.0000000
+[16-10:49:05.639](73) 0.0000000
+[16-10:49:15.639](75) 0.0000000
+[16-10:49:25.633](77) 0.0000000
+[16-10:49:35.629](202) 0.0000000
+[16-10:49:45.638](406) 0.0000000
+[16-10:49:55.640](644) 0.0000000
+[16-10:50:05.633](646) 0.0000000
+[16-10:50:15.630](648) 0.0000000
+[16-10:50:25.633](650) 0.0000000
+[16-10:50:35.627](652) 0.0000000
+[16-10:50:45.641](654) 0.0000000
+[16-10:50:55.637](656) 0.0000000
+[16-10:51:05.638](658) 0.0000000
+[16-10:51:15.633](660) 0.0000000
+[16-10:51:25.632](741) 0.0000000
+[16-10:51:35.641](925) 0.0000000
+[16-10:51:45.633](927) 0.0000000
+[16-10:51:55.647](929) 0.0000000
+[16-10:52:05.641](931) 0.0000000
+[16-10:52:15.640](933) 0.0000000
+[16-10:52:25.640](935) 0.0000000
+[16-10:52:35.637](937) 0.0000000
+[16-10:52:45.641](939) 0.0000000
+[16-10:52:55.640](941) 0.0000000
+
+Channel: Controller Time
+--------------------------------
+[16-10:48:35.631](66) 0.0000000
+[16-10:48:45.636](68) 0.0000000
+[16-10:48:55.627](70) 0.0000000
+[16-10:49:05.639](72) 0.0000000
+[16-10:49:15.639](74) 0.0000000
+[16-10:49:25.633](76) 0.0000000
+[16-10:49:35.629](201) 0.0000000
+[16-10:49:45.638](405) 0.0000000
+[16-10:49:55.640](643) 0.0000000
+[16-10:50:05.633](645) 0.0000000
+[16-10:50:15.630](647) 0.0000000
+[16-10:50:25.633](649) 0.0000000
+[16-10:50:35.627](651) 0.0000000
+[16-10:50:45.641](653) 0.0000000
+[16-10:50:55.637](655) 0.0000000
+[16-10:51:05.638](657) 0.0000000
+[16-10:51:15.633](659) 0.0000000
+[16-10:51:25.632](740) 0.0000000
+[16-10:51:35.641](924) 0.0000000
+[16-10:51:45.633](926) 0.0000000
+[16-10:51:55.647](928) 0.0000000
+[16-10:52:05.641](930) 0.0000000
+[16-10:52:15.640](932) 0.0000000
+[16-10:52:25.640](934) 0.0000000
+[16-10:52:35.637](936) 0.0000000
+[16-10:52:45.641](938) 0.0000000
+[16-10:52:55.640](940) 0.0000000
+
+Channel: Camera
+--------------------------------
+[16-10:53:01.349](985) Shutting down camera
+[16-10:53:01.349](986) Stopping graph
+[16-10:53:01.349](987) Graph stopped
+[16-10:53:01.349](988) Disconnecting graph
+[16-10:53:01.349](989) Graph disconnected
+
+Channel: Cfg Change
+--------------------------------
+[16-10:48:25.394](17) Begin handling cfg changes
+[16-10:48:25.394](18) Prepare to call api configure
+[16-10:48:25.626](30) Api configure completed
+[16-10:48:25.642](31) Cfg menu rebuilt
+[16-10:48:27.096](33) Boxes configured
+[16-10:48:27.900](52) Done handling cfg changes
+
+
